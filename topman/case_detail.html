@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<title>复地集团形象宣传册</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+ <script language='javascript' src='js/jquery.js'></script>
+<script language='javascript' src='js/jscroll.js'></script>
+<script type="text/javascript"> 
+$(document).ready(function(){
+
+  $(".hh").jscroll({ W:"10px"
+          ,BgUrl:"url(images/jscroll_bg.jpg)"
+          ,Bg:"left 0 repeat-y"
+          ,Bar:{Bd:{Out:"#bcbcbc",Hover:"#ccc"}
+             ,Bg:{Out:"-10px 0 repeat-y",Hover:"-10px 0 repeat-y",Focus:"-10px 0 repeat-y"}}  
+             ,Btn:{btn:false//
+             }
+
+          ,Fn:function(){}
+          }); 
+});
+</script>
+</head>
+<body onhashchange="changeCasePage()">
+<div id="main">
+
+  <div id="logo" class="logo"><a href="index.html"></a> </div>
+
+  <div id="banner">
+  <ul id="nav1">
+      <li><a href="about.html">About</a>
+      </li>
+      <li><a href="case studies.html" style="color:#000;">Portfolio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>  
+  <ul id="menu1">
+        <li><a href="case studies.html" style="color:#000;">&nbsp; Case Studies<span></span></a></li>
+        <li><a href="clients.html">&nbsp; Clients<span></span></a></li>
+        <li><a href="recruitment.html">&nbsp; Recruitment<span></span></a></li>
+    </ul>
+  </div>
+ 
+ <div id="topempty"> </div>
+
+
+ <div id="content41">  
+
+  <div style="height:35px;">  <a href="case studies.html" class="STYLE5">Back to Case Studies &gt;&gt;</a>
+  </div>
+  <div class="hh" style="height:312px;"><!--padding会被取消-->
+   <div style="height:358px;padding-left:15px"><!--padding这里设置-->
+  <ul  id="caselist">
+    <li><a href="#case1"><span>复地集团形象宣传册</span></a></li>
+    <li><a href="#case2">Johnson & Johnson-ENDO搏</a></li>
+    <li><a href="#case3">SiTV形象宣传册</a></li>
+    <li><a href="#case4">SCEA-30周年画册</a></li>
+    <li><a href="#case5">东方网10周年画册</a></li>
+    <li><a href="#case6">Lindo品牌宣传册</a></li>
+    <li><a href="#case7">SITV-10周年画册</a></li>
+    <li><a href="#case8">复星集团2011(下)业务宣传册</a></li>
+    <li><a href="#case9">复星财务产品宣传册</a></li>
+    <li><a href="#case10">复星集团2010(下)业务宣传册</a></li>
+    <li><a href="#case11">复星集团2010社会责任报告</a></li>
+    <li><a href="#case12">复星集团2011(上)业务宣传册</a></li>
+    <li><a href="#case13">AstraZeneca-思瑞康时讯</a></li>
+    <li><a href="#case14">富春VI手册</a></li>
+    <li><a href="#case15">复星集团2012社会责任报告</a></li>
+    <li><a href="#case16">复星集团-投资之道宣传册</a></li>
+    <li><a href="#case17">上海人民出版社-呼吸纯真</a></li>
+    <li><a href="#case18">浦东科投形象宣传册</a></li>
+    <li><a href="#case19">上海人民出版社-阿米莉娅系列丛书</a></li>
+    <li><a href="#case20">复星集团2011社会责任报告</a></li>
+    <li><a href="#case21">上海人民出版社-娜小妞</a></li>
+    <li><a href="#case22">豫园商城形象宣传册</a></li>
+    <li><a href="#case23">上海人民出版社-咸鱼跳龙门</a></li>
+    <li><a href="#case24">信谊产品宣传册</a></li>
+    <li><a href="#case25">上海人民出版社-武器与战争系列丛书</a></li>
+    <li><a href="#case26">企业标识设计</a></li> 
+  </ul>
+   </div>
+  </div>
+ </div>
+<div id="idPicShow"></div>
+<div id="idPicList"></div>
+ <div id="footer">
+  &copy;Topman Creative Center 2012 
+ </div>
+</div>
+<script language='javascript'  type="text/javascript" src='js/picshow.js'></script>
+<script type="text/javascript"> 
+var caseData = {
+  case1:["1.jpg","2.jpg","3.jpg","4.jpg"],
+  case2:["1.jpg","2.jpg","3.jpg"],
+  case3:["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg"],
+  case4:["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg"],
+  case5:["1.jpg","2.jpg","3.jpg","4.jpg"],
+  case6:["1.jpg","2.jpg","3.jpg","4.jpg"],
+  case7:["1.jpg","2.jpg","3.jpg","4.jpg"],
+  case8:["1.jpg","2.jpg","3.jpg","4.jpg"],
+  case9:["1.jpg","2.jpg","3.jpg"],
+  case10:["1.jpg","2.jpg","3.jpg"],
+  case11:["1.jpg","2.jpg","3.jpg","4.jpg"],
+  case12:["1.jpg","2.jpg","3.jpg","4.jpg"],
+  case13:["1.jpg","2.jpg","3.jpg","4.jpg"],
+  case14:["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg"],
+  case15:["1.jpg","2.jpg","3.jpg"],
+  case16:["1.jpg","2.jpg","3.jpg"],
+  case17:["1.jpg","2.jpg"],
+  case18:["1.jpg","2.jpg","3.jpg","4.jpg"],
+  case19:["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg"],
+  case20:["1.jpg","2.jpg","3.jpg"],
+  case21:["1.jpg","2.jpg","3.jpg"],
+  case22:["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg"],
+  case23:["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg"],
+  case24:["1.jpg","2.jpg"],
+  case25:["1.jpg","2.jpg","3.jpg","4.jpg"],
+  case26:["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg","9.jpg","10.jpg"],
+}
+
+function changeCasePage(){
+  $('#idPicShow,#idPicList').empty();
+  var rvt = new RevealTrans("idPicShow");
+  var caseHash = location.hash;
+  if(!caseHash) location.hash = "#case1";
+
+  var casename = location.hash.substring(1);
+  $("#caselist li a").removeClass('active');
+  $('a[href=#'+casename+']').addClass('active');
+  var casepages = caseData[casename];
+
+  for(var i=0;i<casepages.length;i++){
+    console.log('case/'+casename+'/'+casepages[i])
+    rvt.Add('case/'+casename+'/'+casepages[i],'');
+  }
+
+  var oList = $f("idPicList"),  arrImg = [];
+  //设置图片列表
+  Each(rvt.List, function(list, i){
+    //图片式
+    var img = document.createElement("img");
+    img.src = list["img"];
+    arrImg[i] = img;
+    oList.appendChild(img);
+    //事件设置
+    img.onmouseover =  function(){ rvt.Auto = false; rvt.Index = i; rvt.Start(); };
+    img.onmouseout =  function(){ rvt.Auto = true; rvt.Start(); };
+  });
+
+  //设置图片列表样式 文本显示区域
+  rvt.onShow = function(){
+    var i = this.Index, list = this.List[i];
+    //图片式
+    Each(arrImg, function(o){ o.className = ""; }); arrImg[i].className = "on";
+  }
+
+  rvt.Start();
+}
+changeCasePage();
+</script>
+</body>
+</html>

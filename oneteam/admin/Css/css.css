@@ -1,0 +1,115 @@
+Form {
+	Margin: 0px;
+	Padding: 0px;
+}
+.Inputtxtlogin {
+	Border: 1px Dotted #666666;
+	Background-color: #f3f3f3;
+}
+Body {
+	Margin: 0px;
+	Padding: 0px;
+	Font-size: 12px;
+}
+Td {
+	Font-size: 12px;
+	Line-height: 150%;
+	Font-family: Arial, Helvetica, Sans-serif;
+}
+.Menutitle Span {
+	Left: 8px;
+	Top: 2px;
+	Position: Relative;
+	Font-weight: Bold;
+}
+.Bgleftmenu {
+	Background-color: #e1e1e1;
+}
+.Tbmenuborder {
+	Border-right-width: 1px;
+	Border-bottom-width: 1px;
+	Border-left-width: 1px;
+	Border-right-style: Solid;
+	Border-bottom-style: Solid;
+	Border-left-style: Solid;
+	Border-right-color: #999999;
+	Border-bottom-color: #999999;
+	Border-left-color: #999999;
+}
+.Fontgray {
+	Color: #444444;
+}
+.Abordermenu {
+	Color: #333333;
+	Padding: 4px;
+	Height: 0px;
+	Text-decoration: None;
+	Width: 1px;
+}
+.Abordermenu:Hover {
+	Background-color: #d9d9d9;
+	Padding: 3px;
+	Height: 0px;
+	Border: 1px Solid #737373;
+}
+
+A:Hover {
+	Color: #333333;
+	Text-decoration: Underline;
+}
+A:Visited {
+	Color: #333333;
+	Text-decoration: None;
+}
+A:Active {
+	Color: #333333;
+	Text-decoration: None;
+}
+A:Link {
+	Color: #333333;
+	Text-decoration: None;
+}
+.Bgtdtop {
+	Background-color: #787878;
+}
+.Bgtbtop {
+	Border: 1px Solid #d1d1d1;
+}
+.Font14pxwhitestrong {
+	Font-weight: Bold;
+	Font-size: 14px;
+	Color: #ffffff;
+}
+.Bgtdmain {
+	Background-color: #eee;
+}
+.Inputtxt {
+	Border-top-width: 1px;
+	Border-right-width: 1px;
+	Border-bottom-width: 1px;
+	Border-left-width: 1px;
+	Border-top-style: Solid;
+	Border-right-style: Solid;
+	Border-bottom-style: Solid;
+	Border-left-style: Solid;
+	Border-top-color: #999999;
+	Border-right-color: #d0d0d0;
+	Border-bottom-color: #d0d0d0;
+	Border-left-color: #999999;
+	Background-color: #f3f3f3;
+	Font-size: 12px;
+}
+.Inputbtn {
+	Background-color: #d1d1d1;
+	Border-top: 1px Solid #b9b9b9;
+	Border-right: 1px Solid #7b7b7b;
+	Border-bottom: 1px Solid #7b7b7b;
+	Border-left: 1px Solid #b9b9b9;
+}
+Input {
+	Font-family: Verdana, Arial, Helvetica, Sans-serif;
+	Font-size: 12px;
+}
+.Bgtdtopgray {
+	Background-color: #afafaf;
+}

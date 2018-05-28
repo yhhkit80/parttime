@@ -1,0 +1,83 @@
+.yToolbar
+{
+}
+TABLE.Toolbar
+{
+	BORDER-RIGHT: #EFEFDE 1px solid;
+}
+TABLE.Toolbar TD
+{
+	BACKGROUND-COLOR: #EFEFDE;
+	BORDER-BOTTOM: #EFEFDE	1px solid;
+	BORDER-RIGHT: #EFEFDE 1px solid;
+	BORDER-TOP:	#EFEFDE	1px solid;
+	HEIGHT: 27px;
+	LEFT: 0px;
+	POSITION: relative;
+	TOP: 0px;
+}
+.Btn
+{
+	BACKGROUND-COLOR: #EFEFDE;
+	BORDER-BOTTOM: #EFEFDE 1px solid;
+	BORDER-LEFT: #EFEFDE 1px	solid;
+	BORDER-RIGHT: #EFEFDE 1px solid;
+	BORDER-TOP:	#EFEFDE 1px solid;
+	HEIGHT: 21px;
+	POSITION: absolute;
+	TOP: 1px;
+	WIDTH: 21px;
+}
+.TBSep
+{
+	BORDER-LEFT: #C5C2B8 1px solid;
+	BORDER-RIGHT: #EFEFDE 1px solid;
+	FONT-SIZE: 0px;
+	HEIGHT: 20px;
+	POSITION: absolute;
+	TOP: 1px;
+	WIDTH:1px
+}
+.TBGen
+{
+	FONT: 8pt arial,sans-serif;
+	HEIGHT: 20px;
+	POSITION: absolute;
+	TOP: 2px
+}
+.TBHandle
+{
+	BACKGROUND-COLOR: #EFEFDE;
+	BORDER-LEFT: #EFEFDE 1px solid;
+	BORDER-RIGHT: #EFEFDE 1px solid;
+	BORDER-TOP:	#EFEFDE	1px solid;
+	FONT-SIZE: 1px;
+	HEIGHT: 20px;
+	POSITION: absolute;
+	TOP: 1px;
+	WIDTH: 3px
+}
+.Ico
+{
+	HEIGHT: 20px;
+	LEFT: -1px;
+	POSITION: absolute;
+	TOP: -1px;
+	WIDTH: 20px
+}
+.BtnMouseOverUp
+{
+	BACKGROUND-COLOR: #C9D3EF;
+	BORDER-BOTTOM: #255DF3	1px solid;
+	BORDER-LEFT: #255DF3 1px solid;
+	BORDER-RIGHT: #255DF3 1px solid;
+	BORDER-TOP:	#255DF3	1px solid;
+	HEIGHT: 21px;
+	POSITION: absolute;
+	TOP: 1px;
+	WIDTH: 21px
+}
+.BtnMouseOverDown
+{
+	BACKGROUND-COLOR: #C9D3EF;
+	BORDER-BOTTOM: #255DF

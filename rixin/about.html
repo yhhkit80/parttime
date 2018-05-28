@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>rx</title>
+<SCRIPT src="js/daily.js" type=text/javascript></SCRIPT>
+<link href="style.css" rel="stylesheet" type="text/css"/>
+
+</head>
+
+<body>
+ <div id="center">
+   <!--TOP--> 
+   <div id="topimg"><img src="img/toplogo.jpg"/></div>
+   <div id="innertop">
+     <img src="img/innertop.jpg" class="innertop"/>
+   </div><!--end innertop-->
+   
+   <div id="main">
+    <!--左边栏--> 
+    <div id="left">
+	 <!--上方导航固定--> 
+	 <div id="leftbanner">
+	  <div id="leftul">
+	   <ul>
+		<li class="list1"><div class="jiantou"><img src="img/jiantou.gif" /></div></li>
+		<li class="list2"><div class="jiantou"><img src="img/jiantou.gif" /></div></li>
+		<li class="list2"><div class="jiantou"><img src="img/jiantou.gif" /></div></li>
+		<li class="list2"><div class="jiantou"><img src="img/jiantou.gif" /></div></li>
+		<li class="list3"><div class="jiantou"><img src="img/jiantou.gif" /></div></li>
+		<li class="list4"><div class="jiantou"><img src="img/jiantou.gif" /></div></li>
+		<li class="list5"><div class="jiantou"><img src="img/jiantou.gif" /></div></li>
+		<li class="list6"><div class="jiantou"><img src="img/jiantou.gif" /></div></li>
+		<li class="list7"><div class="jiantou"><img src="img/jiantou.gif" /></div></li>
+	   </ul>
+	  </div><!--end leftul--> 
+	
+	  <div id="bigleftul">
+	   <ul>
+		<li><a href="index.html">HOME</a></li>
+		<li><a href="sop.html">SOP</a></li>
+		<li><a href="policies.html">POLICIES & FORMS</a></li>
+		<li><a href="timesheet.html">TIMESHEET & SYSTEMS</a></li>
+		<li><a href="training.html">TRAINING</a></li>
+		<li><a href="newhire.html">NEW HIRE</a></li>
+		<li><a href="useful.html">USEFUL OFFICE INFORMATION</a></li>
+		<li><a href="contact.html">CONTACT</a></li>
+		<li><a href="about.html">ABOUT EPSI</a></li>
+	   </ul>
+	  </div><!--end bigleftul--> 
+	 </div><!--end leftbanner--> 
+	
+	 <!--下方自动伸缩--> 
+	 <div id="leftauto">
+	  <div id="emptygray">
+	   <div id="bgray"></div>
+	   <div id="sgray"></div>
+	  </div><!--end emptygray--> 
+	  <!--伸缩中固定的底栏--> 
+	  <div id="emptyblue">
+	   <div id="emblue1"></div>
+	   <div id="goto"><a href="http://www.epsgr.com"><img src="img/house.jpg" /> Goto www.epsgr.com</a></div>
+	  </div><!--end emptyblue--> 
+	 </div><!--end leftauto--> 
+	
+	</div><!--end left--> 
+	
+    <!--右边栏--> 
+    <div id="right">	
+     <div id="righttop">
+	  <p class="title">ABOUT EPSI</p> 
+     </div><!--end righttop--> 
+	
+	 <div id="rightbottom">
+	  <ul class="tylinkul">
+	   <li><a href="#.html">ABOUT EPSI 1</a></li>
+	   <li><a href="#.html">ABOUT EPSI 2</a></li>
+	   <li><a href="#.html">ABOUT EPSI 3</a></li>
+	   <li><a href="#.html">ABOUT EPSI 4</a></li>
+	   <li><a href="#.html">ABOUT EPSI 5</a></li>
+	   <li><a href="#.html">ABOUT EPSI 6</a></li>
+	  </ul>
+	 
+	 
+	 </div><!--end rightbottom--> 
+
+    </div><!--end right-->
+   
+   </div><!--end main--> 
+
+   <!--底部-->
+   <div id="bottom">
+     <img src="img/bottombg.jpg" />
+     <div id="bottomtext"></div>
+   </div><!--end bottom-->
+
+ </div><!--END center-->   
+
+<!--右边自适应高度时，让左边高度等于右边的代码--> 
+<script language="javascript">
+var r=document.getElementById("right").scrollHeight;
+layoutHeight=Math.max(r)-360;
+document.getElementById("left").style.height=layoutHeight+"px";
+</script>
+
+</body>
+</html>

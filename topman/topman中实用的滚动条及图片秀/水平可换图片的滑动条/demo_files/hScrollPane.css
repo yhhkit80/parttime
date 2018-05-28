@@ -1,0 +1,48 @@
+﻿.hScrollPane_dragbar,
+.hScrollPane_draghandle,
+.hScrollPane_leftarrow,.hScrollPane_rightarrow{background:url(../demo_files/sliper.png);}
+
+.hScrollPane_dragbar{
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	height:13px;
+	margin:0 auto;
+	background-position:0px -13px;
+	background-repeat:repeat;
+
+}
+.hScrollPane_draghandle{
+	height:13px;
+	width:20px!important;
+	border:0px solid #d5d3d3;
+	overflow:hidden;
+	position:absolute;
+	top:0px;
+	left:0px;
+	cursor:default;
+	background-position:0px -26px;
+	background-repeat:repeat-x;
+	background-color:#e5e5e5;
+	-moz-border-radius:2px; 
+    -khtml-border-radius:2px; 
+    -webkit-border-radius:2px; 
+    border-radius:2px;
+}
+.hScrollPane_leftarrow,.hScrollPane_rightarrow{
+	display:inline-block;
+	height:13px;
+	width:13px;
+	overflow:hidden;
+	position:absolute;
+	bottom:0;
+}
+.hScrollPane_leftarrow{left:0;}
+.hScrollPane_leftarrow:hover{left:0;}
+.hScrollPane_rightarrow{right:0; background-position:-13px 0;}
+.hScrollPane_rightarrow:hover{background-position:-13px 0;}
+
+.draghandlealter{
+	background-position:center -96px;
+	background-color:#efefef;
+}

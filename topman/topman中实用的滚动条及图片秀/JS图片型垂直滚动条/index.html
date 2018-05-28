@@ -1,0 +1,309 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>jqueryÊµÏÖÍ¼Æ¬´úÌæ¹ö¶¯Ìõ °¢ÀïÎ÷Î÷ÕûÀí·¢²¼¡£</title>
+<style> 
+body{padding:10px 0 0px 0;margin:0; font-size:12px; color:#666666; line-height:20px;}
+p.text{padding:10px; margin:10px; background:#f5f5f5; border:1px solid #ccc;}
+.fontRed{ color:#FF0000}
+.title{font-family:Verdana, Arial; font-weight:bold; font-size:14px; padding:0 20px}
+.demo{ width:500px; margin:30px; font-size:12px; padding:1px; border:1px solid #ccc;}
+.demo2{ border:1px solid #ccc; padding:1px; background:#fff; width:700px; margin:20px;}
+.logo h1,.footer h1{ height:1px; overflow:hidden; padding:0; margin:0; line-height:20px; font-size:12px; display:block}
+.footer { border-top:1px dotted #ccc; font-family:Verdana, Arial, Helvetica, sans-serif;  background:#efefef}
+.footer .copyRight{padding:200x; font-size:11px;}
+.footer .copyRight P a{ text-decoration:î/ne;}
+pre.text{paddiog:11`x; margin:10px; backgrouîd:#f5ff53 border:1px Soléd #ccc;}
+.img{ border:1px solid #efefef; padding:1px; rackground:#fff; width:99px+ mabgin:0 0 0 60px}
+#ut,#Cc,#ea{background:#f5f5f5 height:100px;}
+"
+,downlad{font-size:18px font-famiL9:Verdana, Ariql, Helvetica, sans-serif; padding:20px}
+<-style>
+<{cript langua'e='j!vcscript' src='jquery.js'></script>
+<{cript language='javasczi0t' src='jscroll.js'></script>
+ 
+<script type="text/javascript"> 
+/*--------------------------------------------------------------------------------------------------*/
+$(document).ready(function(){
+	$("#tt").jscroll();
+	$("#cc").jscroll({W:"12px"});
+	$("#ee").jscroll({W:"12px",Btn:{btn:false}});
+	
+/*---------------------------------------------------------ÒÔÏÂÎª×Ô¶¨Òå¹ö¶¯ÌõÑùÊ½£¬ÉèÖÃÊ±×¢Òâ¶ººÅ--------------*/
+	$(".dd").jscroll({ W:"15px"//ÉèÖÃ¹ö¶¯Ìõ¿í¶È
+					,BgUrl:"url(s_bg.gif)"//ÉèÖÃ¹ö¶¯Ìõ±³¾°Í¼Æ¬µØÖ·
+					,Bg:"right 0 repeat-y"//ÙèÖÃ¹ö¶¯Ìõ±³¾°Í¬Æ¬position,ÑÕÉ«µÈ
+					,Bar:{Pos:"bottgm#//ÉèÖÃ¹ö¶¯Ìõ³õê¼»¯Î»ÖÃÔÚ´×²¿
+						 ,Bd:{Out>"#bcbcbc",Hover:"#ccc"}¯/ÉèÖÃ»ö¶¯¹öÖá±ß¿òÑÕÉ«£ºÊó±êÀë¿ª(Ä¬ÈÏ)£¬¾­¹ı
+						 ,Bg:{Out:"-45px 0$repeat-y",Hover:"-5<px 0 repeat-y",Focuc:"-71p8 0 r%peat-y"}}//ÉèVÃ¹ö¶¯Ìõ¹öÖá±³¾°£ºÊó±êÀë¿ª(Ä,ÈÏ)£¤¾­¹ı£¬·ã»÷
+				,Btn:{btn:true//ÊÇ¶ñÏÔÊ¾ÉÏÏÂ°´Å¥ falseÎª²»ÏÔÊ¾
+					 ,uBg:{Out:"0 1",HoVer:"-15px 0",Focuó:"-30px 2"}//ÉèÖÃÉÏ°´å¥±³¼°£ºÊó±êÀë¿ª(Ä¬ÈÏ	£¬¾­ùı£¬µã»÷
+						`,dBg:{Out:"0 -15px",Hover:"-15px -15px",Focus:"-30px -15px"}}//ÉèÖÃÏÂ°´Å¥±³¾°£ºÊó±êÀë¿ª(Ä¬ÈÏ)£¬¾­¹ı£¬µã»÷
+					,Fn:function(){}//¹ö¶¯Ê±ºò´¥·¢µÄ·½·¨
+					});
+ 
+	$(".ff").jscroll({ W:"15px"
+					,BgUrl:"url(s_bg2.gif)"
+					,Bg:"right 0 repeat-y"
+					,Bar:{Bd:{Out:"#a3c3d5",Hover:"#b7d5e6"}
+						 ,Bg:{Out:"-45px 0 repeat-y",Hover:"-58px 0 repeat-y",Focus:"-71px 0 repeat-y"}}
+					,Btn:{btn:true
+						 ,uBg:{Out:"0 0",Hover:"-15px 0",Focus:"-30px 0"}
+						 ,dBg:{Out:"0 -15px",Hover:"-15px -15px",Focus:"-30px -15px"}}
+					,Fn:function(){}
+					});
+ 
+	$(".gg").jscroll({ W:"15px"
+					,BgUrl:"url(s_bg3.gif)"
+					,Bg:"right 0 repeat-y"
+					,Bar:{Bd:{Out:"#bcbcbc",Hover:"#ccc"}
+						 ,Bg:{Out:"-45px 0 repeat-y",Hover:"-58px 0 repeat-y",Focus:"-71px 0 repeat-y"}}
+					,Btn:{btn:true
+						 ,uBg:{Out:"0 0",Hover:"-15px 0",Focus:"-30px 0"}
+						 ,dBg:{Out:"0 -15px",Hover:"-15px -15px",Focus:"-30px -15px"}}
+					,Fn:function(){}
+					});
+ 
+	$(".hh").jscroll({ W:"15px"
+					,BgUrl:"url(s_bg4.gif)"
+					,Bg:"right 0 repeat-y"
+					,Bar:{Bd:{Out:"#bcbcbc",Hover:"#ccc"}
+						 ,Bg:{Out:"-45px 0 repeat-y",Hover:"-58px 0 repeat-y",Focus:"-71px 0 repeat-y"}}
+					,Btn:{btn:true
+						 ,uBg:{Out:"0 0",Hover:"-15px 0",Focus:"-30px 0"}
+						 ,dBg:{Out:"0 -15px",Hover:"-15px -15px",Focus:"-30px -15px"}}
+					,Fn:function(){}
+					});
+ 
+	$(".ii").jscroll({ W:"15px"
+					,BgUrl:"url(s_bg5.gif)"
+					,Bg:"right 0 repeat-y"
+					,Bar:{Bd:{Out:"#064697",Hover:"#064697"}
+						 ,Bg:{Out:"-45px 0 repeat-y",Hover:"-58px 0 repeat-y",Focus:"-71px 0 repeat-y"}}
+					,Btn:{btn:true
+						 ,uBg:{Out:"0 0",Hover:"-15px 0",Focus:"-30px 0"}
+						 ,dBg:{Out:"0 -15px",Hover:"-15px -15px",Focus:"-30px -15px"}}
+					,Fn:function(){}
+					});
+ 
+});
+</script>
+</head>
+<body>
+ÄúµÄÎ»ÖÃ£º<a href="http://www.alixixi.com">°¢ÀïÎ÷Î÷</a> > <a href="http://js.alixixi.com">ÍøÒ³ÌØĞ§</a> > <a href="http://js.alixixi.com/c/guanggao_1.shtml">¹ã¸æ´úÂë</a><hr />
+<div  class="logo">
+	<a href="http://www.alixixi.com/" ><h1>Æ¯ÁÁµÄ¹ö¶¯Ìõ,×Ô¶¨Òå¹ö¶¯Ìõ,×Ô¶¨Òå¹ö¶¯ÌõÑùÊ½,¼æÈİfirefox,¹È¸è</h1></a>
+</div>
+<p class="text"><b>¿ÉÒÔ×ÔÓÉµÄ¸ø¹ö¶¯Ìõ¶¨Òå±³¾°£¬ÉÏÏÂ°´Å¥£¬µ±È»²»½ö½öÊÇÑÕÉ«£¬Á¬Í¼Æ¬µ±±³¾°Ò²¿ÉÒÔ¡£</b><span class="fontRed">Ö§³ÖÊó±ê¹öÂÖ£¬µã»÷¹ö¶¯Ìõ¹öÖá¶¨Î»£¬ÉÏÏÂ°´Å¥¾Ã°´¼ÓËÙ£¬¼æÈİfirefox,¹È¸è</span></p>
+ 
+<p class="text">$(&quot;#tt&quot;).jscroll();//Ä¬ÈÏµ÷ÓÃ </p>
+<p class="title">demo:</p>
+<div class="demo">
+	<div id="tt">
+		<div style="padding:5px;">
+			<b>¶¥²¿</b>
+			<p>ÎÒµÄidÎªdd</p>
+			<p>www.alixixi.com</p>
+			<p>²âÊÔÄÚÈİ</p>
+			<p>²âÊÔÄÚÈİ</p>
+			<p>²âÊÔÄÚÈİ</p>
+			<p>²âÊÔÄÚÈİ</p>
+			<p>²âÊÔÄÚÈİ</p>
+			<p>²âÊÔÄÚÈİ</p>
+			<p>²âÊÔÄÚÈİ</p>
+			<p>²âÊÔÄÚÈİ</p>
+			<p>²âÊÔÄÚÈİ</p>
+			<p>²âÊÔÄÚÈİ</p>
+			<p>²âÊÔÄÚÈİ</p>
+			<b>µ×²¿</b>
+		</div>
+	</div>
+</div>
+<p class="text">$(&quot;#cc&quot;).jscroll({W:&quot;12px&quot;});//ÉèÖÃÁË¹ö¶¯Ìõ¿í¶È</p>
+<p class="title">demo:</p>
+<div class="demo">
+	<div id="cc" >
+		<div style="padding:5px;">
+			<b>¶¥²¿</b>
+			<p>ÎÒµÄidÎªcc</p>
+			<p>www.alixixi.com</p>
+			<p>²âÊÔÄÚÈİ</p>
+			<p>²âÊÔÄÚÈİ</p>
+			<p>²âÊÔÄÚÈİ</p>
+			<p>²âÊÔÄÚÈİ</p>
+			<p>²âÊÔÄÚÈİ</p>
+			<p>²âÊÔÄÚÈİ</p>
+			<p>²âÊÔÄÚÈİ</p>
+			<p>²âÊÔÄÚÈİ</p>
+			<p>²âÊÔÄÚÈİ</p>
+			<p>²âÊÔÄÚÈİ</p>
+			<p>²âÊÔÄÚÈİ</p>
+			<b>µ×²¿</b>
+		</div>
+	</div>
+</div>
+<p class="text">$(&quot;#ee&quot;).jscroll({W:&quot;12px&quot;,Btn:{btn:false}});//ÉèÖÃÁË¹ö¶¯Ìõ¿í¶È,È¥µôÁËÉÏÏÂ°´Å¥,±ÈÓĞ°´Å¥ºÃ¿´¶àÁË£¬µ±È»°´Å¥ÊÇÎªÁËÉèÖÃ±³¾°ÓÃµÄhoho</p>
+<p class="title">demo:</p>
+<div class="demo">
+	<div id="ee">
+		<div style="padding:5px;">
+			<b>¶¥²¿</b>
+			<p>ÎÒµÄidÎªee</p>
+			<p>www.alixixi.com</p>
+			<p>²âÊÔÄÚÈİ</p>
+			<p>²âÊÔÄÚÈİ</p>
+			<p>²âÊÔÄÚÈİ</p>
+			<p>²âÊÔÄÚÈİ</p>
+			<p>²âÊÔÄÚÈİ</p>
+			<p>²âÊÔÄÚÈİ</p>
+			<p>²âÊÔÄÚÈİ</p>
+			<p>²âÊÔÄÚÈİ</p>
+			<p>²âÊÔÄÚÈİ</p>
+			<p>²âÊÔÄÚÈİ</p>
+			<p>²âÊÔÄÚÈİ</p>
+			<b>µ×²¿</b>
+		</div>
+	</div>
+</div>
+<p style="text-align:center">/*-----------------ÒÔÏÂÎª×Ô¶¨Òå¹ö¶¯ÌõÑùÊ½£¬ÉèÖÃÊ±×¢Òâ¶ººÅ--------------*/</p>
+<pre class="text">
+  $(".dd").jscroll({ W:"12px"//ÉèÖÃ¹ö¶¯Ìõ¿í¶È
+	,BgUrl:""//ÉèÖÃ¹ö¶¯Ìõ±³¾°Í¼Æ¬µØÖ·
+	,Bg:"#ccc"//ÉèÖÃ¹ö¶¯Ìõ±³¾°Í¼Æ¬position,ÑÕÉ«µÈ
+	,Bar:{  Pos:"bottom"//ÉèÖÃ¹ö¶¯Ìõ³õÊ¼»¯Î»ÖÃÔÚµ×²¿
+			,Bd:{Out:"#000",Hover:"red"}//ÉèÖÃ¹ö¶¯¹öÖá±ß¿òÑÕÉ«£ºÊó±êÀë¿ª(Ä¬ÈÏ)£¬¾­¹ı
+			,Bg:{Out:"green",Hover:"#fff",Focus:"orange"}}//ÉèÖÃ¹ö¶¯Ìõ¹öÖá±³¾°£ºÊó±êÀë¿ª(Ä¬ÈÏ)£¬¾­¹ı£¬µã»÷
+	,Btn:{  btn:true//ÊÇ·ñÏÔÊ¾ÉÏÏÂ°´Å¥ falseÎª²»ÏÔÊ¾
+			,uBg:{Out:"black",Hover:"#fff",Focus:"orange"}//ÉèÖÃÉÏ°´Å¥±³¾°£ºÊó±êÀë¿ª(Ä¬ÈÏ)£¬¾­¹ı£¬µã»÷
+			,dBg:{Out:"black",Hover:"#fff",Focus:"orange"}}//ÉèÖÃÏÂ°´Å¥±³¾°£ºÊó±êÀë¿ª(Ä¬ÈÏ)£¬¾­¹ı£¬µã»÷
+	,Fn:function(){}//¹ö¶¯Ê±ºò´¥·¢µÄ·½·¨
+	});
+</pre>
+ 
+<p class="title">demo:(¹öÖá³õÊ¼»¯Î»ÖÃ£ºµ×²¿)</p>
+<div class="img"><img src="s_bg.gif" border="0" alt="ËùÓÃÍ¼Æ¬" /></div>
+ 
+<div class="demo2" ><!--¼ÓÌõÏß ºÃ¿´µã ¹ş¹ş-->
+	<div class="dd" style="height:200px;"><!--padding»á±»È¡Ïû-->
+		<div style="padding:5px"><!--paddingÕâÀïÉèÖÃ-->
+			<b>¶¥²¿</b>
+			<p>ÎÒµÄclassÎªdd</p>
+			<p>²âÊÔÄÚÈİ</p>
+			<p>²âÊÔÄÚÈİ</p>
+			<p>²âÊÔÄÚÈİ</p>
+			<p>²âÊÔÄÚÈİ</p>
+			<p>²âÊÔÄÚÈİ</p>
+			<p>²âÊÔÄÚÈİ</p>
+			<p>²âÊÔÄÚÈİ</p>
+			<p>²âÊÔÄÚÈİ</p>
+			<p>²âÊÔÄÚÈİ</p>
+			<p>ÎÒµÄclassÎªdd</p>
+			<p>www.alixixi.com</p>
+			<b>µ×²¿</b>
+		</div>
+	</div>
+</div>
+<div class="img"><img src="s_bg2.gif" border="0" alt="ËùÓÃÍ¼Æ¬" /></div>
+ 
+<div class="demo2" ><!--¼ÓÌõÏß ºÃ¿´µã ¹ş¹ş-->
+	<div class="ff" style="height:200px;"><!--padding»á±»È¡Ïû-->
+		<div style="padding:5px"><!--paddingÕâÀïÉèÖÃ-->
+<pre style="padding:0; margin:0; color:#4174a3">&lt;script type=&quot;text/javascript&quot;&gt;
+$(document).ready(function(){
+ $(".ff").jscroll({
+   W:"15px"
+  ,BgUrl:"url(s_bg2.gif)"
+  ,Bg:"right 0 repeat-y"
+  ,Bar:{Pos:"bottom"
+        ,Bd:{Out:"#a3c3d5",Hover:"#b7d5e6"}
+        ,Bg:{Out:"-45px 0 repeat-y",Hover:"-58px 0 repeat-y",Focus:"-71px 0 repeat-y"}}
+        ,Btn:{btn:true
+              ,uBg:{Out:"0 0",Hover:"-15px 0",Focus:"-30px 0"}
+              ,dBg:{Out:"0 -15px",Hover:"-15px -15px",Focus:"-30px -15px"}}
+  ,Fn:function(){}
+ });
+});
+&lt;/script&gt;</pre>
+		</div>
+	</div>
+</div>
+<div class="img"><img src="s_bg3.gif" border="0" alt="ËùÓÃÍ¼Æ¬" /></div>
+<div class="demo2"  style="  background:#fff;">
+	<div class="gg" style="height:200px;"><!--padding»á±»È¡Ïû-->
+		<div style="padding:5px"><!--paddingÕâÀïÉèÖÃ-->
+<pre style="padding:0; margin:0; color:#b5b5b5; font-family:Verdana, Arial, Helvetica, sans-serif">&lt;script type=&quot;text/javascript&quot;&gt;
+$(document).ready(function(){
+ $(".ff").jscroll({
+   W:"15px"
+  ,BgUrl:"url(s_bg3.gif)"
+  ,Bg:"right 0 repeat-y"
+  ,Bar:{Pos:"bottom"
+        ,Bd:{Out:"#a3c3d5",Hover:"#b7d5e6"}
+        ,Bg:{Out:"-45px 0 repeat-y",Hover:"-58px 0 repeat-y",Focus:"-71px 0 repeat-y"}}
+        ,Btn:{btn:true
+              ,uBg:{Out:"0 0",Hover:"-15px 0",Focus:"-30px 0"}
+              ,dBg:{Out:"0 -15px",Hover:"-15px -15px",Focus:"-30px -15px"}}
+  ,Fn:function(){}
+ });
+});
+&lt;/script&gt;</pre>
+		</div>
+	</div>
+</div>
+<div class="img"><img src="s_bg4.gif" border="0" alt="ËùÓÃÍ¼Æ¬" /></div>
+<div class="demo2"  style="background:#081622;">
+	<div class="hh" style="height:200px;"><!--padding»á±»È¡Ïû-->
+		<div style="padding:5px"><!--paddingÕâÀïÉèÖÃ-->
+<pre style="padding:0; margin:0; color:#b5b5b5; font-family:Verdana, Arial, Helvetica, sans-serif">&lt;script type=&quot;text/javascript&quot;&gt;
+$(document).ready(function(){
+ $(".hh").jscroll({
+   W:"15px"
+  ,BgUrl:"url(s_bg4.gif)"
+  ,Bg:"right 0 repeat-y"
+  ,Bar:{Pos:"bottom"
+        ,Bd:{Out:"#a3c3d5",Hover:"#b7d5e6"}
+        ,Bg:{Out:"-45px 0 repeat-y",Hover:"-58px 0 repeat-y",Focus:"-71px 0 repeat-y"}}
+        ,Btn:{btn:true
+              ,uBg:{Out:"0 0",Hover:"-15px 0",Focus:"-30px 0"}
+              ,dBg:{Out:"0 -15px",Hover:"-15px -15px",Focus:"-30px -15px"}}
+  ,Fn:function(){}
+ });
+});
+&lt;/script&gt;</pre>
+		</div>
+	</div>
+</div>
+<div class="img"><img src="s_bg5.gif" border="0" alt="ËùÓÃÍ¼Æ¬" /></div>
+<div class="demo2"  style="background:#004fb1;">
+	<div class="ii" style="height:200px;"><!--padding»á±»È¡Ïû-->
+		<div style="padding:5px"><!--paddingÕâÀïÉèÖÃ-->
+<pre style="padding:0; margin:0; color:#b5b5b5; font-family:Verdana, Arial, Helvetica, sans-serif">&lt;script type=&quot;text/javascript&quot;&gt;
+$(document).ready(function(){
+ $(".ii").jscroll({
+   W:"15px"
+  ,BgUrl:"url(s_bg5.gif)"
+  ,Bg:"right 0 repeat-y"
+  ,Bar:{Pos:"bottom"
+        ,Bd:{Out:"#a3c3d5",Hover:"#b7d5e6"}
+        ,Bg:{Out:"-45px 0 repeat-y",Hover:"-58px 0 repeat-y",Focus:"-71px 0 repeat-y"}}
+        ,Btn:{btn:true
+              ,uBg:{Out:"0 0",Hover:"-15px 0",Focus:"-30px 0"}
+              ,dBg:{Out:"0 -15px",Hover:"-15px -15px",Focus:"-30px -15px"}}
+  ,Fn:function(){}
+ });
+});
+&lt;/script&gt;</pre>
+		</div>
+	</div>
+</div>
+<div class="download"><a href="jquery.js">Download-->jquery.js</a></div>
+<div class="download"><a href="jscroll.js">Download-->jscroll.js(ÒÀÀµÓÚjquery.js)</a></div>
+			<div class="footer">
+				<div class="copyRight"><h1>¹ö¶¯ÌõÑùÊ½ÖÆ×÷£¬¹ö¶¯Ìõ±³¾°¶¨Òå</h1>Copyright &copy; 2009. Powered by <a href="../index.html">alixixi</a>.
+</div>
+			</div>
+ 
+</body>
+</html>
+

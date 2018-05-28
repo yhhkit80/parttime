@@ -1,0 +1,56 @@
+
+一、首页
+index.html      
+
+
+二、作品欣赏 
+总列表：       showcase.html
+主题外景列表： showcase01.html
+主题内景列表： showcase02.html
+最新客户列表： showcase03.html
+个性写真列表： showcase04.html
+单个作品详请页：showcasexq.html
+
+
+三、外景展示  
+location.html
+locationxq.html
+
+
+四、礼服展示
+wedding.html
+weddingxq.html
+
+
+五、服务报价
+栏目页：   quotaition.html
+婚纱套餐:  quotaition01.html 
+写真套餐:  quotaition02.html
+公益套餐:  quotaition03.html
+
+
+
+六、在线订购表单一张
+订购表单：order.html （表单格式请进一步调整好，提交到后台）
+
+
+
+七、关于圣雪   （不用开发程序）
+圣雪简介:  aboutus.html    （静态页面，不用开发程序）
+圣雪公益:  aboutus02.html  （静态页面，不用开发程序）
+
+
+八、圣雪资讯
+新闻列表：      news.html
+圣雪资讯列表:   news.html      （新闻资讯：有列表）
+促销活动:       news02.html    （促销活动：无列表）
+单条新闻详情页：newsxq.html
+
+
+九、客服信息   
+加入会员：member.html   （会员前台注册，管理员后台查看列表即可）
+服务流程：service.html  （静态页面，不用开发程序）
+联系地图: map.html      （静态页面，不用开发程序）
+
+
+

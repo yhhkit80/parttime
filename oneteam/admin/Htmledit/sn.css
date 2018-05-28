@@ -1,0 +1,58 @@
+body{
+	background: threedface;
+	margin:0
+}
+BODY {
+	FONT: messagebox
+}
+TD {
+	FONT: messagebox
+}
+BUTTON {
+	FONT: messagebox
+}
+INPUT {
+	FONT: messagebox
+}
+SELECT {
+	FONT: messagebox
+}
+textarea {
+	FONT: messagebox
+}
+
+td, legend{
+	font-family: "Tahoma, Arial";
+	font-size: 12px;
+}
+
+.t1, fieldset{
+	font-family: "Tahoma, Arial";
+	font-size: 12px;
+	padding: 5px;
+}
+
+input, select{
+	font-family: "Tahoma, Arial";
+	font-size: 12px;
+}
+
+.dsc{
+	font-size: 12px;
+}
+
+
+.iButton-o{
+	BORDER: #C4C0B9 1PX DASHED;CURSOR:HAND;BACKGROUND-COLOR:threedface;PADDING-LEFT:3px;PADDING-RIGHT:3px;PADDING-TOP:3px;PADDING-BOTTOM:3px;
+}
+.iButton{
+	BORDER-top: buttonhighlight 1PX solid;BORDER-left: buttonhighlight 1PX solid;BORDER-right: buttonshadow 1PX solid;BORDER-bottom: buttonshadow 1PX solid;CURSOR:HAND;BACKGROUND-COLOR:;PADDING-LEFT:3px;PADDING-RIGHT:3px;PADDING-TOP:3px;PADDING-BOTTOM:3px;
+}
+
+.hand{
+	cursor:hand;
+}
+TABLE{
+	BORDER-COLLAPSE:COLLAPSE
+}
+.cssPage{font-size:14px;color:#AA0000;font-family:tahoma;}

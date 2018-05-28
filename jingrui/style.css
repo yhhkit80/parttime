@@ -1,0 +1,156 @@
+/* CSS Document */
+
+BODY {  margin:0;padding:0;overflow-x:hidden;overflow-y:auto;font-family:Arial, Helvetica, sans-serif; }
+HTML {  margin:0;padding:0;}
+a{ 
+text-decoration:none;
+hide-focus: expression(this.hideFocus=true);  /* for ie 5+ */
+outline: none;  /* for firefox 1.5 + */
+}
+img{border:0;margin:0px;padding:0px;}
+#center {margin: 0px auto;padding:0px;width: 1000px;position:relative;}
+/*--top通用--*/
+#topimg {z-index: 0; left: 50%;padding:0px;margin-left: -840px;margin-top: 0px;margin-bottom:0px;padding:0px;width: 1680px;position: absolute;}
+
+#banner{margin: 0px; width:744px;height:70px;padding:27px 0 0 256px;position: relative;display:block;text-align: center;vertical-align:middle;  font-family:微软雅黑;}
+.banner ul{ margin:0px;padding:0px;}
+.banner li{float:left; width:88px;margin:0px; padding:0 0 0 36px;list-style:none; display:inline; }
+.banner li dd{margin:0px; padding:0px; list-style:none; display:inline-block;}
+.banner li dd a:hover {color:#ffcc33; background-color:#272d2d;}
+.bc {width: 60px;display:inline-block;font-size:15px; color:#FFFFFF; font-weight: bold;}
+.be{font-size:12px; color:#ffcc33; }
+
+/*--中间大图秀--*/
+#bg{z-index: 0;left: 50%;margin-left: -840px;margin-top: 0px;margin-bottom:0px;padding:0px;width: 1680px;position: absolute;}
+/*--首页中间大图秀--*/
+#bigimg {position:relative; margin:0px;padding:0px;width:1000px;height:405px;}
+#show{position:relative; margin:0px;padding:0px;width:1000px;height:405px;}
+.bigshowimg{height:100%;width:100%; max-height:405px; max-width:1000px;}
+/*--通用大图秀--*/
+#tyimg {position:relative; margin:0px;padding:0px;width:1000px;height:211px;}
+#tyshow{position:relative; margin:0px;padding:0px;width:1000px;height:211px;}
+.tyshowimg{height:100%;width:100%; max-height:211px; max-width:1000px;}
+
+/*--首页工程服务导航及图片滚动--*/
+#project{position:relative; margin:0px;padding:0px;width:1000px;height:310px; background-image:url(img/projectbg.jpg); background-repeat:no-repeat;}
+#title{float:left; margin:0px;padding:26px 0px 15px 140px;width:860px;height:13px;line-height:13px; vertical-align:bottom;font-size:13px;position: relative;color: #013263;}
+.title a, .title a:visited {color: #013263;}
+.title a:hover {color:#ffcc33;}
+
+.rollphotos {width:1000px; height:auto; margin:0px; padding:0px;}
+.boximg{height:100%;width:100%; max-height:158px; max-width:217px;}
+
+#blk_29 { margin:0px; padding:0px;}
+.LeftBotton {float:left; width:20px;height:158px;margin:17px 0 0 0; padding:0px;  background: url(img/pscpicleft.jpg) no-repeat 0px 0px;}
+.RightBotton{float:left; width:20px;height:158px;margin:17px 0 0 0;padding:0px; background:url(img/pscpicright.jpg) no-repeat 0px 0px;}
+.Cont {float:left; padding-left:0px; width:960px; padding-top:0px; overflow:hidden;}
+.box {float:left;margin-top:1px 0px 0px 0px; width:240px;padding:0px;height:auto;text-align:center;}
+.pscsmall {height:158px; width:217px;margin:0px 6px;padding:10px 0px 0px 0px;}
+.pscsmall a:link img {border: 4px solid #fae168;}
+.pscsmall a:visited img {border: 4px solid #fae168;}
+.pscsmall a:hover img {border: 4px solid #66FFFF;}
+.psctall {width:240px;line-height:50px;vertical-align:middle;margin:0px;padding:0px;}
+.psctia {text-align:center; font-size: 14px; padding:0px; margin:0px;}
+.psctia a{ color: #000;}
+.psctia a:hover { color:#fff; background-color: #245B84;border:0px;}
+/*--首页公司简介及最新动态等三栏--*/
+#jianjie{position:relative; margin:0px;padding:0px 0px 15px 0px;width:1000px;height:200px;font-size:12px;}
+#jian1{float:left;margin:0px;padding:0px 0px 0px 25px;width:275px;height:196px;}
+.jianimg1{margin:0px 2px;padding:0px;border:0;}
+.jianimg2{margin:3px 0px;padding:0px;border: #CACACA solid 3px;}
+.jiantext{text-indent: 2em; margin:5px 0px 0px 0px;padding:0px; line-height:20px;}
+.jiantext a, .jiantext a:visited{color:#000;}
+.jiantext a:hover{color: #FF0000; text-decoration:underline;}
+
+#jian2{float:left; margin:0px;padding:0px 0px 0px 15px;width:330px;height:196px; }
+.jian2img{margin:0px 0px;padding:0px;border:0;}
+#jiannews{ float:left;position:relative;margin:0px;padding:20px 0px 3px 0px;width:330px; height:auto;}
+.jiannews{ margin:0px;padding:0px;width:324px;}
+.jiannews ul{ margin:0px;padding:0px;list-style-type: none ; display:inline;}
+.jiannews li{float:left;margin:0px;padding:5px 0px 5px 0px; width:330px;height:14px;list-style-type: none;text-align:left;text-indent: 2em; border-bottom: dotted 1px; background-image:url(img/jiantou.jpg); background-repeat:no-repeat; background-position: left}
+.jiannews li a,.jiannews li a:visited{color:#000;}
+.jiannews li a:hover{color: #FF0000;}
+
+#jian3{float:left; margin:0px;padding:16px 0px 0px 0px;width:350px;height:180px; text-align:center;}
+
+/*--地址栏及网站地图通用--*/
+#dizhi{position:relative; margin:0px;padding:0px;width:1000px;height:75px; vertical-align:middle;}
+#adtext{float:left;margin:0px;padding:0px;width:760px;height:75px;}
+.foottext{margin:15px 0px 0px 0px;padding:0px;height:35px; text-align:center;font-size:12px;}
+.aden {font-family: "Times New Roman"}
+#qq{float:left; margin:0px;padding:0px 0px 0px 40px;width:160px;height:55px;}
+
+#bottombg {z-index: 0; left: 50%;padding:0;margin-left: -840px;margin-tottom:0px;height:175px;width: 1680px;position: relative;}
+#bottom {margin: 0px;padding:0px;width: 1000px;position:relative; margin-top:-175px;height:175px;}
+
+#botmap {float:left; width:780px; height:120px;margin:0px 0px 0px 220px;padding:0px;text-align:left; display:inline;}
+.maptt {color:#ffcc66; font-weight: bold; font-size:13px;}
+.mapbb {color:#FFFFFF; font-size:13px;}
+.botmap li{ float:left; width:120px;margin:0px; padding:0px; list-style:none;  }
+.botmap dd{ width:85px; margin:0px; padding:0px; list-style:none;}
+.botmap dl{  margin:22px 0px 0px 0px; padding:0px; list-style:none;}
+.botmap dd a:hover { background-color:#272d2d; color: #ffcc66; text-decoration:underline;}
+#botcopy {float:left; position:relative;width:1000px; line-height:15px; vertical-align:middle;margin:15px 0px 0px 0px; padding: 0px;}
+.copytext {color:#FFFFFF; text-align:center;font-size:13px;}
+
+/*--通用中间主体内容--*/
+#main{position:relative;margin:0px;padding:0px;width:1000px;height:auto;min-height:350px;  }
+
+/*--通用左边导航--*/
+#left{float:left;position:relative; margin:0px;padding:0px;width:266px;font-size:14px;}
+#leftimg{ position:relative;margin:0px;padding:0px;width:266px;height:71px;}
+.leftimg{height:100%;width:100%; max-height:71px; max-width:266px;}
+
+#leftbanner{ float:left;position:relative;margin:0px;padding:10px 3px;width:256px; height:auto;}
+.leftbanner{ margin:0px;padding:0px;width:256px;text-align:left; }
+.leftbanner ul{ margin:0px;padding:0px;list-style-type: none ; display:inline;}
+.leftbanner li{float:left;margin:0px;padding:15px 0px 8px 0px; width:256px;height:14px;list-style-type: none;background-image:url(img/left/underline.jpg); background-repeat:no-repeat; background-position:bottom;}
+.leftbanner li a, .leftbanner li a:visited{color:#000;}
+.leftbanner li a:hover{color:#fff; background-color: #245B84;}
+.leftline{margin:0px;padding:0px;width:256px;}
+.sj{padding:0px 8px 0px 20px;}
+#leftbigli{margin:0px;padding:15px 0px 8px 0px;height:auto;}
+.leftbanner li dd{float:left;position:relative;margin:0px;padding:15px 0px 0px 70px;width:180px;height:14px;}
+
+/*--通用右边栏目内容--*/
+#right{float:left;position:relative; margin:0px;padding:0px 7px;width:720px;font-size:14px;height:auto;}
+#position{float:left;position:relative; margin:0px;padding:10px 0px 15px 0px;width:720px;line-height:32px; vertical-align:middle;}
+#maintext{float:left;position:relative; margin:0px;padding:10px 0px 20px 0px;width:720px; height:auto;min-height:370px;_height:370px; overflow: visible;}/*--最后两项是为IE6兼容最小行高参数--*/
+
+/*--通用右栏中的段落文字、蓝色标题格式--*/
+.maintext p{line-height:24px; text-indent:2em; font-size:14px;margin:0px 15px; padding:0px;}
+.ptt{line-height:24px; margin:0px 16px; padding:0px; font-size:16px; color:blue; font-weight:bold;}
+
+/*--工程服务首页为显示屏缩略图，右边页面格式--*/
+#list, .list {float:left; padding:0px; width:720px; margin:0px; }
+#listpage{float:left;position:relative; margin:0px;width:700px;padding:20px 0px 20px 0px;}
+.listpage{ margin:0px;padding:0px;font-size:14px;height:15; text-align:right;}
+.listpage a, .listpage a:visited{color:#000;}
+.listpage a:hover{color:#fae168;}
+
+/*--通用右栏中的图片居中格式--*/
+#rightimg{float:left;margin:0px; width:720px;padding:20px 0px;height:auto;text-align:center;}
+
+
+/*--工程服务中列表详情页，当中的图片格式--*/
+.probox {margin:0px; width:420px;padding:0px 135px;height:auto;text-align:center;}
+.propscsmall {height:300px; width:400px;margin:0px 6px;padding:10px 0px 0px 0px;}
+.propscsmall a:link img {border: 4px solid #fae168;}
+.propscsmall a:visited img {border: 4px solid #fae168;}
+.propscsmall a:hover img {border: 4px solid #66FFFF;}
+.propsctall {width:420px;line-height:50px;vertical-align:middle;margin:0px;padding:0px;}
+.propsctia {text-align:center; font-size: 18px; padding:15px 0px; margin:0px;}
+.propsctia a{ color: #3366CC;font-weight:bold; }
+.propsctia a:hover { color:#fae168; font-weight:bold; border:0px;}
+.proboximg{height:100%;width:100%; max-height:300px; max-width:400px;}
+
+/*--新闻资讯列表中的格式--*/
+#titlenews{ float:left;position:relative;margin:20px 10px;padding:0px;width:620px; height:auto;}
+.titlenews{ margin:0px;padding:0px;width:620px;}
+.titlenews ul{ margin:0px;padding:0px;list-style-type: none ; display:inline;}
+.titlenews li{float:left;margin:0px;padding:5px 0px 5px 0px; width:620px;height:15px;list-style-type: none;text-align:left;text-indent: 2em;  }
+.titlenews li a,.jiannews li a:visited{color:#000;}
+.titlenews li a:hover{color: #FF0000;}
+
+#newstitle{margin:0px;padding:0px;width:720px; text-align:center; }
+.newstitle{font-size:20px;font-weight:bold;color:blue;}

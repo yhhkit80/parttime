@@ -1,0 +1,286 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>rx</title>
+<SCRIPT src="js/SlideTrans.js" type=text/javascript></SCRIPT>
+<SCRIPT src="js/daily.js" type=text/javascript></SCRIPT>
+<link href="style.css" rel="stylesheet" type="text/css"/>
+
+<script type="text/JavaScript">
+<!--
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_jumpMenuGo(selName,targ,restore){ //v3.0
+  var selObj = MM_findObj(selName); if (selObj) MM_jumpMenu(targ,selObj,restore);
+}
+//-->
+</script>
+</head>
+
+<body onLoad="startclock();test(); timerONE=window.setTimeout" >
+ <div id="center">
+   <!--TOP--> 
+   <div id="topimg"><img src="img/toplogo.jpg"/></div>
+   <div id="bigimg">
+     <img id="show" src="img/show/1.jpg" class="bigshowimg"/>
+   </div><!--end bigimg-->
+	  
+<script language="javascript">
+//---------------TOP大图动画--------------//
+var count=1;
+function test(){
+ setTimeout('test()',3000);
+ var img=document.getElementById("show").src="img/show/"+count+".jpg";
+ count++;
+ if(count>4)
+ count=1;
+ }
+//---------------TOP大图动画结束--------------//
+</script>
+   
+   <div id="main">
+    <!--左边栏--> 
+    <div id="left">
+	 <!--上方导航固定--> 
+	 <div id="leftbanner">
+	  <div id="leftul">
+	   <ul>
+		<li class="list1"><div class="jiantou"><img src="img/jiantou.gif" /></div></li>
+		<li class="list2"><div class="jiantou"><img src="img/jiantou.gif" /></div></li>
+		<li class="list2"><div class="jiantou"><img src="img/jiantou.gif" /></div></li>
+		<li class="list2"><div class="jiantou"><img src="img/jiantou.gif" /></div></li>
+		<li class="list3"><div class="jiantou"><img src="img/jiantou.gif" /></div></li>
+		<li class="list4"><div class="jiantou"><img src="img/jiantou.gif" /></div></li>
+		<li class="list5"><div class="jiantou"><img src="img/jiantou.gif" /></div></li>
+		<li class="list6"><div class="jiantou"><img src="img/jiantou.gif" /></div></li>
+		<li class="list7"><div class="jiantou"><img src="img/jiantou.gif" /></div></li>
+	   </ul>
+	  </div><!--end leftul--> 
+	
+	  <div id="bigleftul">
+	   <ul>
+		<li><a href="index.html">HOME</a></li>
+		<li><a href="sop.html">SOP</a></li>
+		<li><a href="policies.html">POLICIES & FORMS</a></li>
+		<li><a href="timesheet.html">TIMESHEET & SYSTEMS</a></li>
+		<li><a href="training.html">TRAINING</a></li>
+		<li><a href="newhire.html">NEW HIRE</a></li>
+		<li><a href="useful.html">USEFUL OFFICE INFORMATION</a></li>
+		<li><a href="contact.html">CONTACT</a></li>
+		<li><a href="about.html">ABOUT EPSI</a></li>
+	   </ul>
+	  </div><!--end bigleftul--> 
+	 </div><!--end leftbanner--> 
+	
+	 <!--下方自动伸缩--> 
+	 <div id="leftauto">
+	  <div id="emptygray">
+	   <div id="bgray"></div>
+	   <div id="sgray"></div>
+	  </div><!--end emptygray--> 
+	  <!--伸缩中固定的底栏--> 
+	  <div id="emptyblue">
+	   <div id="emblue1"></div>
+	   <div id="goto"><a href="http://www.epsgr.com"><img src="img/house.jpg" /> Goto www.epsgr.com</a></div>
+	  </div><!--end emptyblue--> 
+	 </div><!--end leftauto--> 
+	
+	</div><!--end left--> 
+	
+    <!--右边栏--> 
+    <div id="right">	
+     <div id="righttop">
+	  <p class="p1">EPSI ANNOUNCEMENT<span class="link1"><a href="announcement.html">All announcement</a></p> 
+	  <!--首页右上通知事件表格-->
+	  <table class="announcetable" width="725" border="0" cellpadding="0" cellspacing="0">
+	    <tr>
+          <td class="td1"></td>
+	      <td class="td2"><a href="co&pm.html">CO & PM</a></td>
+	      <td class="td3"><a href="announce1.html">Established joint venture company established joint venture company &quot;EPS venture company.1</a></td>
+	      <td class="td4"><span style="color:#ff0000">new!</span></td>
+	      <td class="td5">2012.08.26</td>
+	      </tr>
+        <tr>
+          <td class="td1"></td>
+	      <td class="td2">DEP2</td>
+	      <td class="td3">2</td>
+	      <td class="td4">normal</td>
+	      <td class="td5">2012.08.26</td>
+        </tr>
+        <tr>
+          <td class="td1"></td>
+	      <td class="td2">DEP3</td>
+	      <td class="td3">3</td>
+	      <td class="td4">normal</td>
+	      <td class="td5">2012.08.26</td>
+        </tr>
+        <tr>
+          <td class="td1"></td>
+	      <td class="td2">DEP4</td>
+	      <td class="td3">4</td>
+	      <td class="td4">normal</td>
+	      <td class="td5">2012.08.26</td>
+        </tr>
+        <tr>
+          <td class="td1"></td>
+	      <td class="td2">DEP5</td>
+	      <td class="td3">5</td>
+	      <td class="td4">normal</td>
+	      <td class="td5">2012.08.26</td>
+        </tr>
+        <tr>
+          <td class="td1"></td>
+	      <td class="td2">DEP6</td>
+	      <td class="td3">6</td>
+	      <td class="td4">normal</td>
+	      <td class="td5">2012.08.26</td>
+        </tr>
+        <tr>
+          <td class="td1"></td>
+	      <td class="td2">DEP7</td>
+	      <td class="td3">7</td>
+	      <td class="td4">normal</td>
+	      <td class="td5">2012.08.26</td>
+        </tr>
+        <tr>
+          <td class="td1"></td>
+	      <td class="td2">DEP8</td>
+	      <td class="td3">8</td>
+	      <td class="td4">normal</td>
+	      <td class="td5">2012.08.26</td>
+        </tr>
+        <tr>
+          <td class="td1"></td>
+	      <td class="td2">DEP9</td>
+	      <td class="td3">9</td>
+	      <td class="td4">normal</td>
+	      <td class="td5">2012.08.26</td>
+        </tr>
+        <tr>
+          <td class="td1"></td>
+	      <td class="td2">DEP10</td>
+	      <td class="td3">10</td>
+	      <td class="td4">normal</td>
+	      <td class="td5">2012.08.26</td>
+        </tr>
+      </table>
+<script language="javascript">
+var rows = document.getElementsByTagName('tr');
+for(var i=0;i<rows.length;i++){
+  rows[i].onmouseover = function(){
+    this.className +='altrow';
+  }
+  rows[i].onmouseout = function(){
+    this.className = this.className.replace('altrow',"");
+  }
+}
+</script>
+     </div><!--end righttop--> 
+	
+	 <!--添加当日事件-->
+     <div id="events">
+	  <p class="p1"><a href="eventslist.html">TODAY'S EVENTS</a></p>
+	  <div id="addevents">
+        <div id="time">
+<script language="JavaScript" type="text/javascript">document.write(TODAY); </script>
+        </div>
+        <div id="smallevent">
+	     <ul class="smallevent">
+		  <li><a href="eventsdetail">event1</a></li>
+		  <li><a href="eventsdetail">event2</a></li>
+		  <li><a href="eventsdetail">event3</a></li>
+		  <li><a href="eventsdetail">event4</a></li>
+		  <li><a href="eventsdetail">event5</a></li>
+		 </ul>
+	    </div>
+	  </div>
+     </div><!--end events--> 
+	
+     <!--日历-->
+	 <div id="daily">
+	  <p class="p1">CALENDAR OF EVENTS</p>
+	  <div id="dateselect">
+      <form name="form1" id="form1">
+        <select name="menu1" onchange="MM_jumpMenu('parent',this,0)" class="selectform">
+          <option value="January">January</option>
+          <option value="February">February</option>
+          <option value="March">March</option>
+          <option value="April">April</option>
+          <option value="May">May</option>
+          <option value="June">June</option>
+          <option value="July">July</option>
+          <option value="August">August</option>
+          <option value="September">September</option>
+          <option value="October">October</option>
+          <option value="November">November</option>
+          <option value="December">December</option>
+        </select>
+        <select name="menu1" onchange="MM_jumpMenu('parent',this,0)" class="selectform">
+          <option value="2012">2012</option>
+          <option value="2013">2013</option>
+          <option value="2014">2014</option>
+          <option value="2015">2015</option>
+          <option value="2016">2016</option>
+          <option value="2017">2017</option>
+          <option value="2018">2018</option>
+          <option value="2019">2019</option>
+          <option value="2020">2020</option>
+          <option value="2021">2021</option>
+          <option value="2022">2022</option>
+          <option value="2023">2023</option>
+          <option value="2024">2024</option>
+          <option value="2025">2025</option>
+          <option value="2026">2026</option>
+          <option value="2027">2027</option>
+          <option value="2028">2028</option>
+          <option value="2029">2029</option>
+          <option value="2030">2030</option>
+          <option value="2031">2031</option>
+          <option value="2032">2032</option>
+          <option value="2033">2033</option>
+          <option value="2034">2034</option>
+          <option value="2035">2035</option>
+        </select>
+		
+      </form>
+	  </div>
+      <script LANGUAGE="javascript" TYPE="text/javascript">
+      <!--
+      calendar();
+      //-->
+      </script>
+	 </div><!--end daily--> 
+
+    </div><!--end right-->
+   
+   </div><!--end main--> 
+
+   <!--底部-->
+   <div id="bottom">
+     <img src="img/bottombg.jpg" />
+     <div id="bottomtext"></div>
+   </div><!--end bottom-->
+
+ </div><!--END center-->   
+
+<!--右边自适应高度时，让左边高度等于右边的代码--> 
+<script language="javascript">
+var r=document.getElementById("right").scrollHeight;
+layoutHeight=Math.max(r)-360;
+document.getElementById("left").style.height=layoutHeight+"px";
+</script>
+
+</body>
+</html>

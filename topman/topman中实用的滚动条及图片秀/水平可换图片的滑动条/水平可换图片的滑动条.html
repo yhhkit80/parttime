@@ -1,0 +1,83 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>hScrollPane - 水平滚动条Demo</title>
+<link href="demo_files/hScrollPane.css" type="text/css" rel="stylesheet">
+<style type="text/css">
+body{margin:0; text-align:center; color:#7d8289; font: 12px/1.5 tahoma, arial, \5b8b\4f53, sans-serif;}
+
+
+.container2{
+	width:500px;
+	height:120px;
+	margin:40px auto;
+	overflow:hidden;
+	position:relative;
+	-moz-user-select:none;
+
+}
+.container2 ul{
+	width:10000px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	padding:0;
+	margin:0;
+}
+.container2 ul li{
+	height:124px;
+	width:183px;
+	float:left;
+	line-height:10px;
+	text-align:center;
+	background:#eee;
+	padding:0;
+	margin-right:2px;
+	list-style-type:none;
+}
+.container2 ul li img{border:1px solid #ccc; padding:1px;}
+</style>
+</head>
+
+
+
+
+<body>
+
+
+
+ <div class="container2">
+	<ul style="left: -232.122px;">
+		<li><img src="demo_files/1.jpg" alt=""></li>
+		<li><img src="demo_files/2.jpg" alt=""></li>
+		<li><img src="demo_files/3.jpg" alt=""></li>
+		<li><img src="demo_files/4.jpg" alt=""></li>
+		<li><img src="demo_files/5.jpg" alt=""></li>
+		<li><img src="demo_files/6.jpg" alt=""></li>
+		<li><img src="demo_files/7.jpg" alt=""></li>
+		<li><img src="demo_files/8.jpg" alt=""></li>
+	</ul>
+    <div style="width: 564px; left: 17px;" class="hScrollPane_dragbar">
+      <div style="width: 219.12px; left: 77px;" class="hScrollPane_draghandle"></div>
+    </div>
+    <a href="###" class="hScrollPane_leftarrow"></a><a href="###" class="hScrollPane_rightarrow"></a>
+ </div>
+
+
+<script type="text/javascript" src="demo_files/jquery-1.js"></script>
+<script type="text/javascript" src="demo_files/jquery.js"></script>
+<script type="text/javascript" src="demo_files/hScrollPane.js"></script>
+<script type="text/javascript">
+
+$(".container2").hScrollPane({
+	mover:"ul",
+	moverW:function(){return $(".container2 li").length*207-24;}(),
+	showArrow:true,
+	handleCssAlter:"draghandlealter",
+	mousewheel:{moveLength:207}
+});
+</script>
+</body></html>

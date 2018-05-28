@@ -1,0 +1,52 @@
+<HTML>
+<HEAD>
+<META content="text/html; charset=gb2312" http-equiv=Content-Type>
+
+<style type="text/css">
+body, a, table, div, span, td, th, input, select{font:9pt;font-family: "宋体", Verdana, Arial, Helvetica, sans-serif;}
+body {padding:5px}
+</style>
+<script language="JavaScript" src="dialog.js"></script>
+
+<Script language=JavaScript>
+var sAction = "INSERT";
+var sTitle = "插入";
+
+var oControl;
+var oChild;
+var oSeletion;
+var sRangeType;
+
+var sAlignFieldset = "";
+var sAlignLegend = "";
+var sBorderColor = "";
+var sBgColor = "";
+
+oSelection = dialogArguments.eWebEditor.document.selection.createRange();
+sRangeType = dialogArguments.eWebEditor.document.selection.type;
+
+if (sRangeType == "Control") {
+	if (oSelection.item(0).tagName == "FIELDSET"){
+		sAction = "MODI";
+		sTitle = "修改";
+		oControl = oSelection.item(0);
+		sAlignFieldset = oControl.align;
+		oChild = GetChildElement(oControl,"LEGEND");
+		if (oChild) sAlignLegend = oChild.align;
+		sBorderColor = oControl.style.borderColor;
+		sBgColor = oControl.style.backgroundColor;
+	}
+}
+
+
+document.write("<title>栏目框属性（" + sTitle + "）</title>");
+
+
+// 初始值
+function InitDocument(){
+	SearchSelectValue(d_alignfieldset, sAlignFieldset.toLowerCase());
+	SearchSelectValue(d_alignlegend, sAlignLegend.toLowerCase());
+
+	d_bordercolor.value = sBorderColor;
+	s_bordercolor.style.backgroundColor = sBorderColor;
+	d_bgcolor.value = sB

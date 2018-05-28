@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="gb2312"?>
+<starinfo>
+	<starcfg>
+		<oCompanyName>John Bean - Automotive Wheel Service Equipment</oCompanyName>
+		<oKeywords>John Bean - Automotive Wheel Service Equipment</oKeywords>
+		<oDescriptions>John Bean - Automotive Wheel Service Equipment</oDescriptions>
+		<oAuthor>John Bean - Automotive Wheel Service Equipment</oAuthor>
+		<SENDMAIL></SENDMAIL>
+		<ServerUserName></ServerUserName>
+		<ServerPassWord></ServerPassWord>
+		<serverAddress></serverAddress>
+		<ReceiveMail></ReceiveMail>
+	</starcfg>
+</starinfo>

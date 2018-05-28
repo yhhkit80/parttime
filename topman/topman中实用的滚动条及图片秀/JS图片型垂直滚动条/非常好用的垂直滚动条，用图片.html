@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>jquery实现图片代替滚动条 阿里西西整理发布。</title>
+<style> 
+body{padding:10px 0 0px 0;margin:0; font-size:12px; color:#666666; line-height:20px;}
+p.text{padding:10px; margin:10px; background:#f5f5f5; border:1px solid #ccc;}
+.fontRed{ color:#FF0000}
+.title{font-family:Verdana, Arial; font-weight:bold; font-size:14px; padding:0 20px}
+.demo{ width:500px; margin:30px; font-size:12px; padding:1px; border:1px solid #ccc;}
+.demo2{ border:1px solid #ccc; padding:0px; background:#fff; width:700px; margin:10px;}
+
+
+.logo h1,.footer h1{ height:1px; overflow:hidden; padding:0; margin:0; line-height:20px; font-size:12px; display:block}
+.footer { border-top:1px dotted #ccc; font-family:Verdana, Arial, Helvetica, sans-serif;  background:#efefef}
+.footer .copyRight{padding:20px; font-size:11px;}
+.footer .copyRight p a{ text-decoration:none;}
+pre.text{padding:10px; margin:10px; background:#f5f5f5; border:1px solid #ccc;}
+.img{ border:1px solid #efefef; padding:1px; background:#fff; width:99px; margin:0 0 0 20px}
+#tt,#cc,#ee{background:#f5f5f5; height:100px;}
+ 
+.download{font-size:18px; font-family:Verdana, Arial, Helvetica, sans-serif; padding:20px}
+</style>
+<script language='javascript' src='jquery.js'></script>
+<script language='javascript' src='jscroll.js'></script>
+ 
+<script type="text/javascript"> 
+/*--------------------------------------------------------------------------------------------------*/
+$(document).ready(function(){
+
+	$(".dd").jscroll({ W:"15px"//设置滚动条宽度
+					,BgUrl:"url(s_bg.gif)"//设置滚动条背景图片地址
+					,Bg:"right 0 repeat-y"//设置滚动条背景图片position,颜色等
+					,Bar:{Pos:"bottom"//设置滚动条初始化位置在底部
+						 ,Bd:{Out:"#bcbcbc",Hover:"#ccc"}//设置滚动滚轴边框颜色：鼠标离开(默认)，经过
+						 ,Bg:{Out:"-45px 0 repeat-y",Hover:"-58px 0 repeat-y",Focus:"-71px 0 repeat-y"}}//设置滚动条滚轴背景：鼠标离开(默认)，经过，点击
+					,Btn:{btn:true//是否显示上下按钮 false为不显示
+						 ,uBg:{Out:"0 0",Hover:"-15px 0",Focus:"-30px 0"}//设置上按钮背景：鼠标离开(默认)，经过，点击
+						 ,dBg:{Out:"0 -15px",Hover:"-15px -15px",Focus:"-30px -15px"}}//设置下按钮背景：鼠标离开(默认)，经过，点击
+					,Fn:function(){}//滚动时候触发的方法
+					});
+ 
+
+ 
+
+ 
+	$(".hh").jscroll({ W:"10px"
+					,BgUrl:"url(s_bg8.jpg)"
+					,Bg:"left 0 repeat-y"
+					,Bar:{Bd:{Out:"#bcbcbc",Hover:"#ccc"}
+						 ,Bg:{Out:"-10px 0 repeat-y",Hover:"-10px 0 repeat-y",Focus:"-10px 0 repeat-y"}}					,Btn:{btn:false//
+						 }
+
+					,Fn:function(){}
+					});
+ 
+
+ 
+});
+</script>
+</head>
+<body>
+
+
+ 
+
+
+
+ 
+
+
+
+
+<div class="img"><img src="s_bg4.gif" border="0" alt="所用图片" /></div>
+<div class="demo2"  style="background:#fff;border:0">
+	<div class="hh" style="height:200px;"><!--padding会被取消-->
+		<div style="padding:5px"><!--padding这里设置-->
+<pre style="padding:0; margin:0; color:#b5b5b5; font-family:Verdana, Arial, Helvetica, sans-serif">
+节 右大开绿灯楞国l右檌克拉拉萨 国
+
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+$(document).ready(function(){
+ $(".hh").jscroll({
+   W:"15px"
+  ,BgUrl:"url(s_bg4.gif)"
+  ,Bg:"right 0 repeat-y"
+  ,Bar:{Pos:"bottom"
+        ,Bd:{Out:"#a3c3d5",Hover:"#b7d5e6"}
+        ,Bg:{Out:"-45px 0 repeat-y",Hover:"-58px 0 repeat-y",Focus:"-71px 0 repeat-y"}}
+        ,Btn:{btn:true
+              ,uBg:{Out:"0 0",Hover:"-15px 0",Focus:"-30px 0"}
+              ,dBg:{Out:"0 -15px",Hover:"-15px -15px",Focus:"-30px -15px"}}
+  ,Fn:function(){}
+ });
+});
+&lt;/script&gt;</pre>
+		</div>
+	</div>
+</div>
+
+
+
+ 
+</body>
+</html>
+

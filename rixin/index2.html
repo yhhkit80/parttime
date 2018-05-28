@@ -1,0 +1,197 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>rx</title>
+
+<link href="style.css" rel="stylesheet" type="text/css"/>
+
+</head>
+
+<body onLoad="test()" >
+ <div id="center">
+   <!--TOP--> 
+   <div id="topimg"><img src="img/toplogo.jpg"/></div>
+   <div id="bigimg">
+     <img id="show" src="img/show/1.jpg" class="bigshowimg"/>
+   </div><!--end bigimg-->
+<script language="javascript">
+//---------------TOP大图动画--------------//
+var count=1;
+function test(){
+ setTimeout('test()',3000);
+ var img=document.getElementById("show").src="img/show/"+count+".jpg";
+ count++;
+ if(count>4)
+ count=1;
+ }
+//---------------TOP大图动画结束--------------//
+</script>
+   
+   <div id="main">
+    <!--左边栏--> 
+    <div id="left">
+	 <!--上方导航固定--> 
+	 <div id="leftbanner">
+	  <div id="leftul">
+	   <ul>
+		<li class="list1"><div class="jiantou"><img src="img/jiantou.gif" /></div></li>
+		<li class="list2"><div class="jiantou"><img src="img/jiantou.gif" /></div></li>
+		<li class="list2"><div class="jiantou"><img src="img/jiantou.gif" /></div></li>
+		<li class="list2"><div class="jiantou"><img src="img/jiantou.gif" /></div></li>
+		<li class="list3"><div class="jiantou"><img src="img/jiantou.gif" /></div></li>
+		<li class="list4"><div class="jiantou"><img src="img/jiantou.gif" /></div></li>
+		<li class="list5"><div class="jiantou"><img src="img/jiantou.gif" /></div></li>
+		<li class="list6"><div class="jiantou"><img src="img/jiantou.gif" /></div></li>
+		<li class="list7"><div class="jiantou"><img src="img/jiantou.gif" /></div></li>
+	   </ul>
+	  </div><!--end leftul--> 
+	
+	  <div id="bigleftul">
+	   <ul>
+		<li><a href="index.html">HOME</a></li>
+		<li><a href="sop.html">SOP</a></li>
+		<li><a href="policies.html">POLICIES & FORMS</a></li>
+		<li><a href="timesheet.html">TIMESHEET & SYSTEMS</a></li>
+		<li><a href="training.html">TRAINING</a></li>
+		<li><a href="newhire.html">NEW HIRE</a></li>
+		<li><a href="useful.html">USEFUL OFFICE INFORMATION</a></li>
+		<li><a href="contact.html">CONTACT</a></li>
+		<li><a href="about.html">ABOUT EPSI</a></li>
+	   </ul>
+	  </div><!--end bigleftul--> 
+	 </div><!--end leftbanner--> 
+	
+	 <!--下方自动伸缩--> 
+	 <div id="leftauto">
+	  <div id="emptygray">
+	   <div id="bgray"></div>
+	   <div id="sgray"></div>
+	  </div><!--end emptygray--> 
+	  <!--伸缩中固定的底栏--> 
+	  <div id="emptyblue">
+	   <div id="emblue1"></div>
+	   <div id="goto"><a href="http://www.epsgr.com"><img src="img/house.jpg" /> Goto www.epsgr.com</a></div>
+	  </div><!--end emptyblue--> 
+	 </div><!--end leftauto--> 
+	
+	</div><!--end left--> 
+	
+    <!--右边栏--> 
+    <div id="right">	
+     <div id="righttop">
+	  <p class="p1">EPSI ANNOUNCEMENT<span class="link1"><a href="announcement.html">All announcement</a></p> 
+	  <!--首页右上通知事件表格-->
+	  <table class="announcetable" width="725" border="0" cellpadding="0" cellspacing="0">
+	    <tr>
+          <td class="td1"></td>
+	      <td class="td2"><a href="co&pm.html">CO & PM</a></td>
+	      <td class="td3"><a href="announcedetail.html">Established joint venture company established joint venture company &quot;EPS venture company.1</a></td>
+	      <td class="td4"><span style="color:#ff0000">new!</span></td>
+	      <td class="td5">2012.08.26</td>
+	    </tr>
+        <tr>
+          <td class="td1"></td>
+	      <td class="td2">DEP2</td>
+	      <td class="td3">2</td>
+	      <td class="td4">normal</td>
+	      <td class="td5">2012.08.26</td>
+        </tr>
+        <tr>
+          <td class="td1"></td>
+	      <td class="td2">DEP3</td>
+	      <td class="td3">3</td>
+	      <td class="td4">normal</td>
+	      <td class="td5">2012.08.26</td>
+        </tr>
+        <tr>
+          <td class="td1"></td>
+	      <td class="td2">DEP4</td>
+	      <td class="td3">4</td>
+	      <td class="td4">normal</td>
+	      <td class="td5">2012.08.26</td>
+        </tr>
+        <tr>
+          <td class="td1"></td>
+	      <td class="td2">DEP5</td>
+	      <td class="td3">5</td>
+	      <td class="td4">normal</td>
+	      <td class="td5">2012.08.26</td>
+        </tr>
+        <tr>
+          <td class="td1"></td>
+	      <td class="td2">DEP6</td>
+	      <td class="td3">6</td>
+	      <td class="td4">normal</td>
+	      <td class="td5">2012.08.26</td>
+        </tr>
+        <tr>
+          <td class="td1"></td>
+	      <td class="td2">DEP7</td>
+	      <td class="td3">7</td>
+	      <td class="td4">normal</td>
+	      <td class="td5">2012.08.26</td>
+        </tr>
+        <tr>
+          <td class="td1"></td>
+	      <td class="td2">DEP8</td>
+	      <td class="td3">8</td>
+	      <td class="td4">normal</td>
+	      <td class="td5">2012.08.26</td>
+        </tr>
+        <tr>
+          <td class="td1"></td>
+	      <td class="td2">DEP9</td>
+	      <td class="td3">9</td>
+	      <td class="td4">normal</td>
+	      <td class="td5">2012.08.26</td>
+        </tr>
+        <tr>
+          <td class="td1"></td>
+	      <td class="td2">DEP10</td>
+	      <td class="td3">10</td>
+	      <td class="td4">normal</td>
+	      <td class="td5">2012.08.26</td>
+        </tr>
+      </table>
+<script language="javascript">
+var rows = document.getElementsByTagName('tr');
+for(var i=0;i<rows.length;i++){
+  rows[i].onmouseover = function(){
+    this.className +='altrow';
+  }
+  rows[i].onmouseout = function(){
+    this.className = this.className.replace('altrow',"");
+  }
+}
+</script>
+     </div><!--end righttop--> 
+	
+	 <div id="rightbottom">
+	  <img src="daily.jpg" />
+	 
+	 
+	 </div><!--end rightbottom--> 
+
+    </div><!--end right-->
+   
+   </div><!--end main--> 
+
+   <!--底部-->
+   <div id="bottom">
+     <img src="img/bottombg.jpg" />
+     <div id="bottomtext"></div>
+   </div>
+   <!--end bottom-->
+
+ </div><!--END center-->   
+
+<!--右边自适应高度时，让左边高度等于右边的代码--> 
+<script language="javascript">
+var r=document.getElementById("right").scrollHeight;
+layoutHeight=Math.max(r)-360;
+document.getElementById("left").style.height=layoutHeight+"px";
+</script>
+
+</body>
+</html>

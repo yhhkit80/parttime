@@ -1,0 +1,393 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+
+<title>»¶Ó­ÄúÀ´µ½Ê¥Ñ©¹ú¼Ê»éÉ´ÉãÓ°²ß»®ÖÐÐÄ£¡==ÉÏº£»éÉ´ÕÕ|ÉÏº£»éÉ´ÉãÓ°¹¤×÷ÊÒ|ÉÏº£ÍâÌ²»éÉ´ÉãÓ°==</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<SCRIPT src="js/ScrollPic.js" type=text/javascript></SCRIPT>
+
+<script type="text/javascript">
+
+if(typeof(pyzy)=='undefined'){
+	var pyzy={};  //ÆðÓÃ·â×°·½·¨Ãû³Æ£¬±ÜÃâ½Å±¾ÃüÃûÎÛÈ¾
+	pyzy.$ = function(fctId) { return document.getElementById(fctId); };
+}
+pyzy.ColorText=function(fctText,fctTop,fctLeft,fctBold,Color,bgColor,FontSize){
+	var varZBT=(fctTop-fctBold/2);
+	var varZBL=(fctLeft-fctBold/2);
+	var varWriteText="";
+	for(var i=1;i<fctBold;i++){
+		for(var j=1;j<fctBold;j++){
+			varWriteText=varWriteText+'<div style="position:absolute;z-index:0;margin:'+(varZBT+i)+'px '+(varZBL+j)+'px;color:'+bgColor+';font-size:'+FontSize+'px;">'+fctText+'</div>';
+		}
+	}
+	return varWriteText+'<div style="position:absolute;z-index:0;margin:'+fctTop+'px '+fctLeft+'px;color:'+Color+';font-size:'+FontSize+'px;">'+fctText+'</div>';
+}
+//CloseImgBox
+//Í¼Æ¬ºÐ×ÓÕ¹Ê¾¹¤¾ßÖ÷Òª·½·¨ 
+pyzy.MinImgsBox = {
+    intImgId: 0, //Ä¬ÈÏÍ¼Æ¬ID
+    arrImgs: [["Í¼Æ¬Ãû³Æ", "´óÍ¼Â·¾¶", "Ð¡Í¼Â·¾¶"]], //Í¼Æ¬Êý¾Ý
+    objMaxImgBoxObj: null, //´óÍ¼Æ¬ÈÝÆ÷
+    objMinImgBoxObj: null,  //Ð¡Í¼Æ¬ÈÝÆ÷
+    objMinImgObj: null,     //µ±Ç°ÕýÔÚ²¥·ÅµÄÐ¡Í¼µÄIMG¶ÔÏó£¬ÓÃÓÚÐ£¶ÔÐ¡Í¼ÈÝÆ÷µÄ¹ö¶¯ÌõÎ»ÖÃµÈ
+    objPlayRateObj: null,  //²¥·Å½ø¶È¶ÔÏó
+    /* Init Ë÷Òý·½·¨£º
+    @ fctArrImgs       Í¼Æ¬ÐÅÏ¢Êý¾ÝÊý×é ²Î¼û arrImgs µÄ¸ñÊ½*/
+    Init: function(fctArrImgs) {
+        this.arrImgs = fctArrImgs;  //½«Í¼Æ¬Êý¾Ý´æ´¢ÓÚ±äÁ¿ÖÐ
+        this.objMaxImgBoxObj = pyzy.$("divPyzyImgBoxContent"); //½«´óÍ¼Æ¬ÈÝÆ÷´æ´¢ÓÚ±äÁ¿
+        this.objMinImgBoxObj = pyzy.$("divPyzyMinImgs");   //½«Ð¡Í¼Æ¬ÈÝÆ÷´æ´¢ÓÚ±äÁ¿
+        this.objPlayRateObj = pyzy.$("divPyzyImgBoxRate"); //½«²¥·Å½ø¶È¶ÔÏó´æ´¢ÓÚ±äÁ¿
+        var tmpMinImgsBoxHTML = []; //ÁÙÊ±Ð¡Í¼ÁÐ±í´æ´¢
+        for (var intI = 0; intI < this.arrImgs.length; intI++) {
+            tmpMinImgsBoxHTML[tmpMinImgsBoxHTML.length] = "<img id='imgMinItem" + intI + "' onClick='pyzy.MinImgsBox.Show(" + intI + ")' alt='" + this.arrImgs[intI][0] + "' src='" + this.arrImgs[intI][2] + "' />"
+        }
+        this.objMinImgBoxObj.innerHTML = tmpMinImgsBoxHTML.join(""); //Êä³öÐ¡Í¼ÁÐ±íµ½ÈÝÆ÷
+        this.Show(0); //Ä¬ÈÏÏÔÊ¾µÚÒ»¸öÍ¼Æ¬
+    },
+    Show: function(fctId) {
+        if (this.arrImgs.length == 0) {
+            alert("È±ÉÙÍ¼Æ¬Êý¾Ý");
+            return;
+        }
+        //ÅÐ¶ÏID²¢½ÃÕýÎªÕýÈ·±àºÅ
+        fctId = (fctId < 0 ? this.arrImgs.length - 1 : (fctId >= this.arrImgs.length ? 0 : fctId));
+        //²¥·Å½ø¶È
+        this.objPlayRateObj.title = "¹²[" + this.arrImgs.length + "]ÕÅÍ¼Æ¬£¬µ±Ç°ÎªµÚ[" + (fctId+1) + "]ÕÅÍ¼Æ¬£¬²¥·Å½ø¶ÈÎª" + ((fctId + 1) / this.arrImgs.length * 100) + "%¡£";
+        this.objPlayRateObj.style.width = ((fctId + 1) / this.arrImgs.length * this.objPlayRateObj.parentNode.offsetWidth) + "px";
+        //È¡µÃµ±Ç°²¥·ÅÍ¼Æ¬µÄÐ¡Í¼¶ÔÏó
+        this.objMinImgObj = pyzy.$("imgMinItem" + fctId)
+        //µ÷ÕûÐ¡Í¼Æ¬ÈÝÆ÷¹ö¶¯ÌõÎ»ÖÃ£¬Ê¹µÃµ±Ç°Í¼Æ¬ÔÚÈÝÆ÷µÄÖÐ¼ä
+        pyzy.MinImgsScroll.Init(
+            this.objMinImgBoxObj,
+            (
+                (   //ÏÈÍ¨¹ýÐ¡Í¼Æ¬¶ÔÏóµÄ×ó±ß¾àÓëµÃ³öÍ¼Æ¬ÓëÈÝÆ÷×ó±ßµÄ¾àÀë£ºÒòÎªIE»·¾³ÏÂµÄÔªËØ±ß¾àÊÇÏà¶ÔÓÚ¸¸ÈÝÆ÷µÄ¡¢¶ø»ðºüÏÂÊÇÏà¶ÔÓÚ´°Ìå£¬ËùÒÔÕâÀïÓÃµ½ÁËä¯ÀÀÆ÷»·¾³µÄÅÐ¶Ï
+                    this.objMinImgObj.offsetLeft -
+                    (navigator.appVersion.indexOf("MSIE") == -1 ? this.objMinImgObj.parentNode.offsetLeft:0)
+                ) -  //¼õµôÍ¼Æ¬ÈÝÆ÷¹ö¶¯ÌõÒÑ¾­¾íµôµÄÏàËØ£¬ÕâÑùÈ¡µ½µÄÊÇ¿ÉÒÔÊ¹Ð¡Í¼Æ¬Ê¼ÖÕ¾ÓÓÚÈÝÆ÷×î×ó±ßµÄ£¬ËùÒÔ½ÓÏÂÀ´¼õµôÈÝÆ÷Ò»°ëµÄ¿í¶È Ç¡ÇÉ¾Í¿ÉÒÔÊ¹Ð¡Í¼Æ¬¾ÓÓÚÈÝÆ÷ÖÐ¼ä
+                this.objMinImgBoxObj.scrollLeft
+                -
+                (this.objMinImgBoxObj.offsetWidth / 2)
+             )
+        );
+        //Êä³öÍ¼Æ¬Ãû³Æµ½´óÍ¼Æ¬ÈÝÆ÷
+        this.objMaxImgBoxObj.innerHTML = pyzy.ColorText(this.arrImgs[fctId][0], 0, 0, 4, "#444;bottom:2px;right:10px", "#444;bottom:2px;right:10px", 5) + pyzy.ColorText(this.arrImgs[fctId][0], 2, 2, 4, "#666;bottom:2px;right:10px", "#fff;bottom:2px;right:10px", 5);
+        //ÓÃµ±Ç°´óÍ¼Æ¬Â·¾¶Ìæµô´óÍ¼Æ¬ÈÝÆ÷µÄ±³¾°
+        this.objMaxImgBoxObj.style.backgroundImage = "url(" + this.arrImgs[fctId][1] + ")";
+        //È¡ÏûÏÈÇ°µÄÄ¬ÈÏÍ¼Æ¬µÄÑ¡ÖÐ×´Ì¬
+        pyzy.$("imgMinItem" + this.intImgId).className = "";
+        //ÉèÖÃÏÈÇ°µÄÄ¬ÈÏÍ¼Æ¬ÎªÑùÊ½ÎªÑ¡ÖÐ×´Ì¬
+        this.objMinImgObj.className = "Sel";
+        this.intImgId = fctId;
+    }
+};
+//¹ö¶¯Ìõ¿ØÖÆ·½·¨ 
+pyzy.MinImgsScroll = {
+    intAllScrollSeep: 0, //²½³¤£¬µ¥´Î¹ö¶¯µÄ·ù¶È
+    intScrollCount: 0,   //¹ö¶¯³¤¶È¼ÇÂ¼ ¼ÇÂ¼°´ÏóËØ¹ö¶¯µÄ³¤¶ÈÓë²½³¤¶Ô±È ÓÃÒÔÊµÏÖ¶¯Ì¬¹ö¶¯Ð§¹û
+    objScroll: null,     //Òª¿ØÖÆÆä¹ö¶¯ÌõµÄÄ¿±ê¶ÔÏó
+    boolLeft: true,      //¹ö¶¯ÌõÀàÐÍ£¬Ä¬ÈÏÎª×óÓÒË®Æ½¹ö¶¯Ìõ
+    /* Init Ë÷Òý·½·¨£º
+    @ (fctBoxObj) Òª¿ØÖÆÆä¹ö¶¯ÌõµÄÄ¿±ê¶ÔÏó,±ØÐëÖ¸¶¨
+    @ [fctSeep]   ÒÆ¶¯²½³¤ °´Õý¸ºÊý¿ØÖÆ×óÓÒ¹ö¶¯[²»Ö¸¶¨ÔòÄ¬ÈÏÎªÄ¿±ê¶ÔÏóµÄ¿í¶È(Èç¹ûÊÇ´¹Ö±ÔòÎªÆä¸ß¶È)]
+    @ [fctTop]    ¹ö¶¯ÌõÀàÐÍ Ä¬ÈÏLeftÎª×óÓÒË®Æ½¹ö¶¯Ìõ,´Ë²ÎÊýÖ¸¶¨ÈÎÒâÖµÔòÎª´¹Ö±¹ö¶¯Ìõ */
+    Init: function(fctObj, fctSeep, fctTop) {
+        this.objScroll = fctObj;
+        this.boolLeft = (fctTop == null);
+        this.intAllScrollSeep = (fctSeep == null ? (this.boolLeft ? this.objScroll.offsetWidth : this.objScroll.offsetHeight) : fctSeep);
+        //ÅÐ¶Ï¹ö¶¯²½³¤Öµ Èç¹ûÎªµ±Ç°×´Ì¬µÄ·´·½Ïò Ôò½«¹ö¶¯·ù¶ÈÈ¡·´
+        this.intSeep = ((this.intAllScrollSeep < 0 && this.intSeep > 0) || (this.intAllScrollSeep > 0 && this.intSeep < 0) ? -1 : 1) * this.intSeep;
+        this.intScrollCount = 0; //³õÊ¼»¯²½³¤Ö´ÐÐ½ø¶ÈÍ³¼ÆÎª0
+        this.AutoSeep();
+    },
+    intSeep: 5, //×Ô¶¯¹ö¶¯Ê±µÄ·ù¶È Ä¬ÈÏÎª10ÏóËØ
+    AutoSeep: function() {
+        if (Math.abs(this.intAllScrollSeep) > Math.abs(this.intScrollCount)) { //ÊÇ·ñÒÑ¾­Íê³É¹ö¶¯²½³¤
+            this.intScrollCount += this.intSeep;
+            if (this.boolLeft) { this.objScroll.scrollLeft += this.intSeep; }
+            else { this.objScroll.scrollTop += this.intSeep; }
+            window.setTimeout("pyzy.MinImgsScroll.AutoSeep();", 1); //8 ºÁÃëºó¼ÌÐøÖ´ÐÐ¹ö¶¯,Ò²¿ÉÒÔ¸ü¸Ä´Ë²ÎÊý¿ØÖÆ¹ö¶¯Ê±µÄËÙ¶È
+        }
+    }
+};
+</script>
+
+     <script language="javascript">
+// ÐÞ¸´ IE ÏÂ PNG Í¼Æ¬²»ÄÜÍ¸Ã÷ÏÔÊ¾µÄÎÊÌâ
+function fixPNG(myImage) {
+var arVersion = navigator.appVersion.split("MSIE");
+var version = parseFloat(arVersion[1]);
+if ((version >= 5.5) && (version < 7) && (document.body.filters))
+{
+     var imgID = (myImage.id) ? "id='" + myImage.id + "' " : "";
+     var imgClass = (myImage.className) ? "class='" + myImage.className + "' " : "";
+     var imgTitle = (myImage.title) ? "title='" + myImage.title   + "' " : "title='" + myImage.alt + "' ";
+     var imgStyle = "display:inline-block;" + myImage.style.cssText;
+     var strNewHTML = "<span " + imgID + imgClass + imgTitle
+
+   + " style=\"" + "width:" + myImage.width
+
+   + "px; height:" + myImage.height
+
+   + "px;" + imgStyle + ";"
+
+   + "filter:progid:DXImageTransform.Microsoft.AlphaImageLoader"
+
+   + "(src=\'" + myImage.src + "\', sizingMethod='scale');\"></span>";
+     myImage.outerHTML = strNewHTML;
+} } 
+
+</script> 
+
+</head>
+
+
+<body>
+<!--[if IE 6]>
+<script src="js/DD_belatedPNG_0.0.8a.js" mce_src="js/DD_belatedPNG_0.0.8a.js"></script>
+<script type="text/javascript">
+DD_belatedPNG.fix('.blackbg,.menu');
+</script>
+<![endif]--> 
+
+<!--Ê×Ò³Î»ÖÃ¾ÓÖÐ-->
+<div id="center">  
+<!--Ò³Ãæ×ÜÍâ¿ò-->
+<div id="container">
+
+
+
+<!--Í·²¿¿ªÊ¼--> 
+<div id="topall">
+        <div class="bigimg">
+		
+             <img src="images/banner21.jpg"/>		
+		
+		</div>
+        <div class="blackbg">
+		
+		<div class="dhul">
+		   <ul>
+		                                              
+			 <li>
+			    <dd><a href="index.html" class="textw12">&nbsp;&nbsp;&nbsp;Ê× Ò³</a></dd>
+				<dd><a href="index.html" class="texty12">&nbsp;&nbsp;&nbsp;HOME</a></dd>
+		     </li>
+
+			 <li>
+			    <dd><a href="showcase.html" class="textw12">×÷Æ·ÐÀÉÍ</a></dd>
+				<dd><a href="showcase.html" class="texty12">SHOWCASE</a></dd>
+		     </li>
+			 
+			 <li>
+			    <dd><a href="location.html" class="textw12">Íâ¾°Õ¹Ê¾</a></dd>
+				<dd><a href="location.html" class="texty12">LOCATION</a></dd>
+		     </li>
+			                                                
+			 <li>
+			    <dd><a href="wedding.html" class="textw12">Àñ·þÕ¹Ê¾</a></dd>
+				<dd><a href="wedding.html" class="texty12">WEDDINGDRESS</a></dd>
+		     </li>
+
+			 <li>
+			    <dd><a href="quotaition.html" class="textw12">·þÎñ±¨¼Û</a></dd>
+				<dd><a href="quotaition.html" class="texty12">QUOTATION</a></dd>
+		     </li>
+			 
+			 <li>
+			    <dd><a href="order.html " class="textw12">ÔÚÏß¶©¹º</a></dd>
+				<dd><a href="order.html " class="texty12">ORDER</a></dd>
+		     </li>
+
+			 <li>
+			    <dd><a href="aboutus.html" class="textw12">¹ØÓÚÊ¥Ñ©</a></dd>
+				<dd><a href="aboutus.html" class="texty12">ABOUT US</a></dd>
+		     </li>
+
+		   </ul>	    
+		</div>
+		
+		</div>
+        <div class="menu"></div>
+        <div class="menubobg"></div>
+</div><!--Í·²¿½áÊø--> 
+
+
+
+
+<!--ÖÐ¼ä²¿·Ö¿ªÊ¼--> 
+<div id="cont">
+    <div class="conleft"></div> <!--×óÍ¶Ó°ÊúÏß-->
+	
+	<!--ÕýÎÄÄÚÈÝ-->
+    <div class="concenter">
+
+   <!--×÷Æ·ÐÀÉÍÁÐ±íÒ³-->   
+	<div class="pscti5"></div>
+	
+
+<div class="contul">
+
+<div class="conti">·þÎñÌ×²Í</div>
+<div><img src="images/contredline.gif" /></div>
+
+<div class="contli">
+
+    <ul class="showcaseul">
+      <li>
+          <div class="contlitext"><a href="quotaition.html">> »éÉ´Ì×²Í</a></div>
+		  <div class="redline"><img src="images/contredline.gif"/></div>
+      </li>
+	  <li>
+          <div class="contlitext"><a href="quotaition.html">> Ð´ÕæÌ×²Í</a></div>
+		  <div class="redline"><img src="images/contredline.gif"/></div>
+      </li>
+	  	  <li>
+          <div class="contlitext"><a href="quotaition.html">> ¹«ÒæÌ×²Í</a></div>
+		  <div class="redline"><img src="images/contredline.gif"/></div>
+      </li>
+
+    </ul>
+
+
+</div>
+
+</div><!--×óÁÐ±í½áÊø-->
+
+<div class="conleft3"></div><!--ÖÐ¼äÍ¶Ó°ÊúÏß-->
+
+<div class="showcase3">
+
+	        <div class="bj2">	
+
+                      <div class="biaoti3">
+                           <span class="texty10"> 2012-浪漫夏季婚纱套餐</span>
+                           <span class="texty9"> RBM: 2599元</span>
+                           <hr class="biaotihr2"></hr>
+                           <div class="textb6">浪漫夏季，是圣雪摄影机构特别推荐的一款套餐。<br>
+					               浪漫夏季婚纱套餐,浪漫夏季婚纱套餐浪漫夏季婚纱套餐。浪漫夏季婚纱套餐浪漫夏季婚纱套餐。浪漫夏季婚纱套餐，
+							       浪漫夏季圣雪摄影机构特别推荐的一款婚纱摄影作品，天涯海角，鉴证真爱......
+                           </div>
+                      </div>
+			 </div>
+			   <div class="fanye2"><div class="contlitext2"><a href="quotaition.html">>> 套餐详情</a></div></div>
+
+		
+</div>
+ 
+		 
+	
+	  </div><!--ÕýÎÄ½áÊø-->
+	
+      <div class="conright"></div><!--ÓÒÍ¶Ó°ÊúÏß-->
+</div><!--ÖÐ¼ä²¿·Ö½áÊø--> 
+
+
+
+
+<!--µ×²¿¿ªÊ¼--> 
+<div>
+
+  <div class="kf">
+      <div class="kfxj"><img src="images/xjbot.gif"/></div>
+      <div class="kfdz">µØÖ· : ÉÏº£ÊÐ»ÆÆÖÂ·200ºÅ»ÆÆÖ´óÂ¥518ÊÒ£¨ÇàÆÖÂ·½»²æ¿Ú£©</div>
+      <div class="kftel1">µç»° :</div>
+      <div class="kftel2"><img src="images/telbot.gif"/></div>
+      <div class="kfqq"><img src="images/qqbot.gif"/></div>
+  </div>
+  
+  <div class="botmenu">
+     <div class="botline"></div>
+	 <div class="botmap">
+	 
+	     <div class="botmap1"><p class="texty16">ÍøÕ¾µØÍ¼:</p></div>
+	     <div class="botmap2">
+			<li>   
+		      <dl> 
+		        <dd><a href="aboutus.html" class="texty16">¹ØÓÚÊ¥Ñ©</a></dd>
+		        <dd><a href="aboutus.html" class="textw16">Ê¥Ñ©¼ò½é</a></dd>
+		        <dd><a href="aboutus02.html" class="textw16">Ê¥Ñ©¹«Òæ</a></dd>
+		      </dl>
+			</li>  
+			
+			<li>   
+		      <dl> 
+		        <dd><a href="news.html" class="texty16">Ê¥Ñ©×ÊÑ¶</a></dd>
+		        <dd><a href="news01.html" class="textw16">Ê¥Ñ©×ÊÑ¶</a></dd>
+		        <dd><a href="news02.html" class="textw16">´ÙÏú»î¶¯</a></dd>
+		      </dl>
+			</li>  
+			
+			<li>   
+		      <dl> 
+		        <dd><a href="showcase.html" class="texty16">×÷Æ·ÐÀÉÍ</a></dd>
+		        <dd><a href="showcase.html" class="textw16">Ö÷ÌâÍâ¾°</a></dd>
+				<dd><a href="showcase.html" class="textw16">Ö÷ÌâÄÚ¾°</a></dd>
+				<dd><a href="showcase.html" class="textw16">×îÐÂ¿Í»§</a></dd>
+				<dd><a href="showcase.html" class="textw16">¸öÐÔÐ´Õæ</a></dd>
+		      </dl>
+			</li>  
+			
+			<li>   
+		      <dl> 
+		        <dd><a href="location.html" class="texty16">Íâ¾°Õ¹Ê¾</a></dd>
+		        <dd><a href="location.html" class="textw16">Íâ¾°Õ¹Ê¾</a></dd>
+		      </dl>
+			</li>  
+		
+			<li>   
+		      <dl> 
+		        <dd><a href="wedding.html" class="texty16">Àñ·þÕ¹Ê¾</a></dd>
+		        <dd><a href="wedding.html" class="textw16">Àñ·þÕ¹Ê¾</a></dd>
+		      </dl>
+			</li>  
+
+			<li>   
+		      <dl> 
+		        <dd><a href="quotaition.html" class="texty16">·þÎñ±¨¼Û</a></dd>
+		        <dd><a href="quotaition.html" class="textw16">»éÉ´Ì×²Í</a></dd>
+		        <dd><a href="quotaition.html" class="textw16">Ð´ÕæÌ×²Í</a></dd>
+				<dd><a href="quotaition.html" class="textw16">¹«ÒæÌ×²Í</a></dd>
+		      </dl>
+			</li>  
+			
+			<li>   
+		      <dl> 
+		        <dd><a href="order.html" class="texty16">ÔÚÏß¶©¹º</a></dd>
+		        <dd><a href="order.html" class="textw16">ÍÅÅÄ¶©¹º</a></dd>
+		      </dl>
+			</li>  
+			
+			<li>   
+		      <dl> 
+		        <dd><a href="service.html" class="texty16">¿Í·þÐÅÏ¢</a></dd>
+				<dd><a href="member.html" class="textw16">¼ÓÈë»áÔ±</a></dd>
+		        <dd><a href="service.html" class="textw16">·þÎñÁ÷³Ì</a></dd>
+		        <dd><a href="map.html" class="textw16">½»Í¨µØÍ¼</a></dd>
+		      </dl>
+			</li>  		
+		 </div>
+		 
+		 <div class="botmap3"><img src="images/botmap3.png" width="143" height="152" border="0" onload="fixPNG(this)" /></div> 
+ 
+ </div>
+	 
+  <div class="botcopy"> <p class="textw14">版权所有 @ 2009-2012&nbsp;&nbsp;&nbsp;上海圣雪国际婚纱摄影策划中心 &nbsp;&nbsp;&nbsp; 沪ICP备11023426号-2</p>
+  </div>
+	
+  </div>
+  
+
+
+
+
+</div> 
+
+</div>  
+</div>  
+
+</body>
+</html>
