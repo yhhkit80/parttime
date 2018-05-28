@@ -1,0 +1,475 @@
+.big-container,
+.container {
+	margin: 0 auto;
+	width: 100%;
+	overflow-x: hidden;
+}
+
+.big-container {
+	max-width: 1904px;
+	min-width: 1200px;
+}
+
+.container {
+	width: 1192px;
+	padding: 0 4px;
+}
+
+.bg-blue {
+	background: #2d79a1;
+}
+
+.bg-white {
+	background: #FFFFFF;
+}
+
+.blue {
+	color: #2d79a1;
+}
+
+.white {
+	color: #FFFFFF;
+}
+
+.top {
+	height: 124px;
+	background: #2d79a1 url(../img/bg-top.png) no-repeat center;
+}
+.top .container{
+	height: 124px;
+}
+.top-logo {
+	width: 250px;
+	height: 124px;
+	background: url(../img/logo.png) no-repeat left center;
+}
+
+.top-nav {
+	width: 490px;
+	height: 20px;
+	margin: 60px 0 0 0;
+	display: inline-block;
+}
+
+.top-nav li {
+	float: left;
+	padding: 0 20px;
+}
+
+.top-nav li a {
+	display: block;
+	line-height: 16px;
+	font-size: 15px;
+	color: #FFFFFF;
+}
+
+.top-nav li.active a,
+.top-nav li a:hover {
+	color: #b2fff7;
+}
+
+.top-telbox {
+	margin: 54px 0 0 30px;
+	width: 210px;
+	display: inline-block;
+	height: 40px;
+}
+
+.tel-icon {
+	margin: 0px 10px;
+	width: 40px;
+	height: 40px;
+	background: url(../img/tel.png) no-repeat center;
+}
+
+.tel-tip span {
+	color: #FFFFFF;
+}
+
+.tel-tip .tel-number {
+	line-height: 24px;
+	font-size: 24px;
+	font-family: arial;
+}
+
+.tel-tip .tel-time {
+	font-size: 16px;
+	line-height: 16px;
+}
+
+.banner {
+	height: 262px;
+	background: #FFFFFF center no-repeat;
+	background-size: cover;
+}
+
+.banner.aboutus {
+	background-image: url(../img/aboutus.png);
+}
+
+.banner.product {
+	background-image: url(../img/product.png);
+}
+
+.banner.join {
+	background-image: url(../img/join.png);
+}
+
+.banner.contact {
+	background-image: url(../img/contact.png);
+}
+
+.swiper-banner {
+	height: 560px;
+	border-top: 1px solid #FFFFFF;
+}
+
+.swiper-container {
+	height: 100%;
+}
+
+.swiper-pagination-bullet {
+	width: 14px;
+	height: 14px;
+}
+
+.swiper-pagination-bullet-active {
+	background: #2D79A1;
+}
+
+.home-main {
+	margin: 45px auto;
+}
+
+.home-main .left {
+	width: 448px;
+}
+
+.home-main .right {
+	width: 706px;
+}
+
+.home-main .header {
+	margin-bottom: 20px;
+	height: 43px;
+	border-bottom: 1px solid #2D79A1;
+}
+
+.home-main .header .title {
+	display: block;
+	width: 150px;
+	line-height: 43px;
+	background: #327BA2;
+	text-indent: 20px;
+	color: #FFFFFF;
+}
+
+.home-main .left .content {
+	position: relative;
+	line-height: 24px;
+	height: 144px;
+	overflow: hidden;
+	font-size: 14px;
+	color: #666666;
+	text-align: justify;
+	text-justify: inter-ideograph;
+	/*IE兼容时要一起写*/
+}
+
+.home-main .left .content .more-btn {
+	display: block;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: 1;
+	width: 50%;
+	height: 24px;
+	text-align: right;
+	color: #666666;
+	background: #FFFFFF;
+}
+
+.home-main .left .content .more-btn:hover {
+	color: #2D79A1;
+}
+
+.home-main .left .content .more-btn:before {
+	position: absolute;
+	left: 2px;
+	content: '......';
+	height: 24px;
+}
+
+.home-main .right .content {
+	width: 706px;
+}
+
+.main {
+	margin: 38px auto 50px;
+}
+
+.main .left {
+	width: 272px;
+}
+
+.main .right {
+	width: 880px;
+}
+
+.main .left .header {
+	width: 272px;
+	/*height: 82px;*/
+	background: url(../img/title-bg.png) no-repeat center;
+}
+
+.main .header .title {
+	display: block;
+	line-height: 82px;
+	font-size: 30px;
+	font-family: '华文中宋', '宋体';
+}
+
+.main .left .header .title {
+	text-align: center;
+	color: #FFFFFF;
+}
+
+.main .right .header .title {
+	color: #2D79A1;
+	border-bottom: 1px solid #2D79A1;
+}
+
+.main .left .content {
+	position: relative;
+	height: 264px;
+	padding: 0 10px 30px;
+	border: 1px solid #b5cfdd;
+	border-radius: 0 0 3px 3px;
+	overflow: hidden;
+	background: #FFFFFF;
+}
+
+.main .right .content {
+	min-height: 420px;
+	line-height: 28px;
+}
+
+.main .right .content p {
+	font-size: 14px;
+}
+
+.main .right .content .p_title {
+	color: #2D79A1;
+	font-size: 24px;
+}
+
+.salemap {
+	display: block;
+	margin: 50px auto;
+}
+
+.left-nav li {
+	border-top: 1px solid #b5cfdd;
+}
+
+.left-nav li a {
+	line-height: 52px;
+	display: block;
+	cursor: pointer;
+	text-indent: 50px;
+	font-size: 16px;
+	color: #666666;
+}
+
+.left-nav li.active a,
+.left-nav li a:hover {
+	color: #2D79A1;
+}
+
+.left-nav li:first-child {
+	border-top: none;
+}
+
+.bottom {
+	position: relative;
+	padding-top: 40px;
+	height: 260px;
+	background: #2D79A1;
+}
+
+.bottom:after {
+	display: block;
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 80px;
+	background: url(../img/bg-wave.png) no-repeat center;
+}
+
+.bottom-nav>li {
+	float: left;
+	width: 70px;
+	margin-left: 100px;
+}
+
+.bottom-nav>li:first-child {
+	margin-left: 0;
+}
+
+.bottom-nav>li ul {
+	margin-top: 10px;
+}
+
+.bottom-nav a {
+	display: block;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+.bottom-nav>li>a {
+	line-height: 20px;
+	font-size: 15px;
+}
+
+.bottom-nav>li ul li a {
+	line-height: 30px;
+	font-size: 14px;
+}
+
+.bottom-nav li.active a,
+.bottom-nav li a:hover {
+	color: #b2fff7;
+}
+
+.copyright {
+	line-height: 65px;
+	text-align: right;
+	color: #999999;
+}
+
+.list-item {
+	display: block;
+	float: left;
+	margin-left: 20px;
+}
+
+.list-item:first-child {
+	margin-left: 0!important;
+}
+
+.list-item img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.home-main .right .content {
+	padding: 4px 0;
+}
+
+.home-main .right .list-item {
+	width: 220px;
+	height: 132px;
+	border: 1px solid #2D79A1;
+	background: #FFFFFF;
+}
+
+.list .list-item {
+	margin-top: 50px;
+	height: 336px;
+	background: #FFFFFF;
+}
+
+.list .list-item img {
+	height: 284px;
+	border: 1px solid #DDDDDD;
+}
+
+.list .list-item .item-title {
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	color: #666666;
+}
+
+.cert-list .list-item {
+	margin-left: 28px;
+	width: 197px;
+}
+
+.workshop-list .list-item {
+	margin-left: 40px;
+	width: 418px;
+}
+
+.product-list {
+	margin-bottom: 20px;
+}
+
+.product-list div:first-child .list-item {
+	margin-top: 20px;
+}
+
+.product-list .list-item {
+	margin-left: 40px;
+	width: 420px;
+	height: 480px;
+	border: none;
+}
+
+.product-list .list-item img {
+	height: 420px;
+	border: none;
+}
+
+.product-list .list-item .item-title {
+	height: 60px;
+	line-height: 60px;
+	background: #2D79A1;
+	font-size: 24px;
+	color: #FFFFFF;
+}
+
+.bottom .left .list-item {
+	margin-left: 40px;
+	width: 142px;
+	height: 186px;
+}
+
+.bottom .left .item-img {
+	height: 142px;
+}
+
+.bottom .left .item-title {
+	width: 100%;
+	height: 44px;
+	line-height: 44px;
+	color: #FFFFFF;
+	font-size: 15px;
+	text-align: center;
+}
+.swiper-pagination {
+  position: absolute;
+  z-index: 20;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+.swiper-pagination-switch {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 7px;
+  background: #eeeeee;
+  background: rgba(	245,245,245,1);
+  margin: 0 5px;
+  opacity: .5;
+  filter: Alpha(opacity=50);
+  cursor: pointer;
+}
+.swiper-active-switch {
+  background: #2D79A1;
+  background: rgba(45,121,161,1);
+}
